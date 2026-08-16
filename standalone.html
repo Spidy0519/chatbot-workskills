@@ -1,0 +1,4231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workskills X - India's #1 Platform for IIT Certified Programs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+:root {
+    --ws-green: #4CAF7D;
+    --ws-green-dark: #3d9468;
+    --ws-green-tint: #E8F7EF;
+    --ws-navy: #0F1C3F;
+    --ws-gray: #4B5563;
+    --ws-light-gray: #F3F4F6;
+    --ws-white: #FFFFFF;
+    --ws-border: #E5E7EB;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--ws-gray);
+    background: var(--ws-white);
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid var(--ws-border);
+    z-index: 1000;
+}
+
+.ws-logo {
+    width: 42px;
+    height: 42px;
+    background: var(--ws-green);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 800;
+    font-size: 1.4rem;
+}
+
+.navbar-nav .nav-link {
+    color: var(--ws-navy) !important;
+    font-weight: 500;
+    margin-left: 1.5rem;
+    transition: color 0.2s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--ws-green) !important;
+}
+
+/* Hero Section */
+.hero-section {
+    padding-top: 100px;
+    background: linear-gradient(135deg, var(--ws-white) 0%, var(--ws-green-tint) 100%);
+    min-height: 100vh;
+}
+
+.hero-badge {
+    display: inline-block;
+    background: var(--ws-green-tint);
+    color: var(--ws-green);
+    padding: 0.4rem 1rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-title {
+    font-size: 3.2rem;
+    font-weight: 800;
+    color: var(--ws-navy);
+    line-height: 1.15;
+    margin-bottom: 1.5rem;
+}
+
+.text-green {
+    color: var(--ws-green);
+}
+
+.hero-subtitle {
+    font-size: 1.1rem;
+    color: var(--ws-gray);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    max-width: 500px;
+}
+
+.hero-cta .btn {
+    padding: 0.7rem 1.8rem;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.hero-badges {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+}
+
+.badge-item {
+    background: var(--ws-white);
+    border: 1px solid var(--ws-border);
+    padding: 0.4rem 1rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--ws-navy);
+}
+
+.hero-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+}
+
+.hero-collage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.collage-card {
+    background: var(--ws-white);
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s;
+}
+
+.collage-card:hover {
+    transform: translateY(-4px);
+}
+
+.collage-main {
+    grid-column: span 2;
+    background: var(--ws-green);
+    color: white;
+}
+
+.collage-main p {
+    color: white;
+    font-weight: 600;
+    margin: 0;
+}
+
+.student-emoji {
+    font-size: 3rem;
+    margin-bottom: 0.8rem;
+}
+
+.collage-secondary,
+.collage-tertiary {
+    background: var(--ws-green-tint);
+}
+
+.collage-secondary p,
+.collage-tertiary p {
+    color: var(--ws-navy);
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.company-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+    justify-content: center;
+}
+
+.company-badge {
+    background: var(--ws-white);
+    border: 1px solid var(--ws-border);
+    padding: 0.3rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--ws-navy);
+}
+
+/* Buttons */
+.btn-ws-primary {
+    background: var(--ws-green);
+    border-color: var(--ws-green);
+    color: white;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.btn-ws-primary:hover {
+    background: var(--ws-green-dark);
+    border-color: var(--ws-green-dark);
+    color: white;
+}
+
+.btn-ws-secondary {
+    background: var(--ws-white);
+    border: 2px solid var(--ws-navy);
+    color: var(--ws-navy);
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.btn-ws-secondary:hover {
+    background: var(--ws-navy);
+    color: white;
+}
+
+/* Stats Section */
+.stats-section {
+    padding: 5rem 0;
+    background: var(--ws-white);
+}
+
+.stat-card {
+    text-align: center;
+    padding: 2rem 1.5rem;
+    border-radius: 16px;
+    background: var(--ws-green-tint);
+    transition: transform 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-4px);
+}
+
+.stat-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.stat-number {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--ws-navy);
+    margin-bottom: 0.3rem;
+}
+
+.stat-label {
+    color: var(--ws-gray);
+    font-weight: 500;
+    margin: 0;
+}
+
+/* Programs Section */
+.programs-section {
+    padding: 5rem 0;
+    background: var(--ws-light-gray);
+}
+
+.section-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--ws-navy);
+}
+
+.section-subtitle {
+    color: var(--ws-gray);
+    font-size: 1.05rem;
+    margin-top: 0.5rem;
+}
+
+.program-card {
+    background: var(--ws-white);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.program-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.program-badge {
+    display: inline-block;
+    background: var(--ws-green-tint);
+    color: var(--ws-green);
+    padding: 0.3rem 0.8rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.program-card h4 {
+    color: var(--ws-navy);
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+
+.program-institute {
+    color: var(--ws-green);
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.program-price {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--ws-navy);
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 5rem 0;
+    background: var(--ws-navy);
+}
+
+.cta-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.cta-subtitle {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.cta-buttons .btn-ws-primary {
+    background: var(--ws-green);
+    border-color: var(--ws-green);
+}
+
+.cta-buttons .btn-ws-secondary {
+    background: transparent;
+    border-color: white;
+    color: white;
+}
+
+.cta-buttons .btn-ws-secondary:hover {
+    background: white;
+    color: var(--ws-navy);
+}
+
+/* Footer */
+.ws-footer {
+    background: var(--ws-navy);
+    padding: 3rem 0 1.5rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-heading {
+    color: white;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-links a:hover {
+    color: var(--ws-green);
+}
+
+.footer-text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.footer-divider {
+    border-color: rgba(255, 255, 255, 0.1);
+    margin: 2rem 0 1rem;
+}
+
+.footer-copyright {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Chat Widget */
+.chat-widget {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 9999;
+    font-family: 'Poppins', sans-serif;
+}
+
+.chat-launcher {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--ws-green);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(76, 175, 125, 0.4);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.chat-launcher:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 28px rgba(76, 175, 125, 0.5);
+}
+
+.chat-panel {
+    position: absolute;
+    bottom: 76px;
+    right: 0;
+    width: 380px;
+    height: 520px;
+    background: var(--ws-white);
+    border-radius: 16px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    animation: chatSlideUp 0.3s ease;
+}
+
+@keyframes chatSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.chat-header {
+    background: var(--ws-green);
+    color: white;
+    padding: 1rem 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ws-logo-sm {
+    width: 34px;
+    height: 34px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 800;
+    font-size: 1.1rem;
+}
+
+.chat-header-title {
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+.chat-header-status {
+    font-size: 0.75rem;
+    opacity: 0.85;
+}
+
+.chat-close {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.6rem;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0;
+    opacity: 0.85;
+    transition: opacity 0.2s;
+}
+
+.chat-close:hover {
+    opacity: 1;
+}
+
+.chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    background: var(--ws-light-gray);
+}
+
+.chat-message {
+    display: flex;
+    max-width: 85%;
+}
+
+.bot-message {
+    align-self: flex-start;
+}
+
+.user-message {
+    align-self: flex-end;
+}
+
+.message-bubble {
+    padding: 0.75rem 1rem;
+    border-radius: 14px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
+
+.bot-bubble {
+    background: var(--ws-white);
+    color: var(--ws-navy);
+    border-bottom-left-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.user-bubble {
+    background: var(--ws-green);
+    color: white;
+    border-bottom-right-radius: 4px;
+}
+
+.typing-indicator {
+    display: flex;
+    gap: 4px;
+    padding: 0.75rem 1rem;
+    background: var(--ws-white);
+    border-radius: 14px;
+    border-bottom-left-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+    width: fit-content;
+}
+
+.typing-dot {
+    width: 8px;
+    height: 8px;
+    background: #9CA3AF;
+    border-radius: 50%;
+    animation: typingBounce 1.4s infinite ease-in-out;
+}
+
+.typing-dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.typing-dot:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes typingBounce {
+    0%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-6px); }
+}
+
+.chat-input-area {
+    padding: 0.8rem;
+    border-top: 1px solid var(--ws-border);
+    background: var(--ws-white);
+}
+
+.chat-form {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.chat-input {
+    flex: 1;
+    border: 1px solid var(--ws-border);
+    border-radius: 10px;
+    padding: 0.65rem 1rem;
+    font-size: 0.9rem;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.chat-input:focus {
+    border-color: var(--ws-green);
+}
+
+.chat-send {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    background: var(--ws-green);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+    flex-shrink: 0;
+}
+
+.chat-send:hover {
+    background: var(--ws-green-dark);
+}
+
+.chat-send:disabled {
+    background: #9CA3AF;
+    cursor: not-allowed;
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   Interactive Assistant UI
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* Bot Block — container for all structured bot responses */
+.bot-block {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    gap: 0.4rem;
+}
+
+.bot-block-label {
+    font-size: 0.85rem;
+    color: var(--ws-navy);
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.bot-block-intro {
+    font-size: 0.8rem;
+    color: var(--ws-gray);
+    margin: 0;
+    line-height: 1.45;
+}
+
+/* ── Button Group Labels ──────────────────────────────────────── */
+.btn-group-label {
+    font-size: 0.7rem;
+    color: var(--ws-gray);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 0.4rem 0 0.1rem 0;
+    padding: 0;
+}
+
+/* ── Button Grids ──────────────────────────────────────────────── */
+.chat-btn-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+}
+
+.chat-btn-grid.courses-grid {
+    flex-direction: column;
+}
+
+.chat-btn-grid.nav-grid {
+    margin-top: 0.25rem;
+    padding-top: 0.4rem;
+    border-top: 1px solid var(--ws-border);
+}
+
+.chat-btn-grid.action-grid {
+    margin-top: 0.2rem;
+}
+
+/* ── Action Buttons ────────────────────────────────────────────── */
+.chat-action-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    background: var(--ws-white);
+    border: 1.5px solid var(--ws-border);
+    border-radius: 8px;
+    padding: 0.45rem 0.75rem;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--ws-navy);
+    transition: all 0.2s;
+    white-space: nowrap;
+}
+
+.chat-action-btn:hover {
+    border-color: var(--ws-green);
+    background: var(--ws-green-tint);
+    color: var(--ws-green-dark);
+    transform: translateY(-1px);
+}
+
+.chat-action-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.chat-action-btn.primary {
+    background: var(--ws-green);
+    border-color: var(--ws-green);
+    color: white;
+}
+
+.chat-action-btn.primary:hover {
+    background: var(--ws-green-dark);
+    border-color: var(--ws-green-dark);
+    color: white;
+}
+
+.chat-action-btn.small {
+    font-size: 0.72rem;
+    padding: 0.35rem 0.6rem;
+}
+
+/* ── Back Button ───────────────────────────────────────────────── */
+.chat-back-btn {
+    display: inline-block;
+    background: none;
+    border: none;
+    color: var(--ws-gray);
+    font-size: 0.75rem;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0.35rem 0;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    transition: color 0.2s;
+    margin-top: 0.15rem;
+}
+
+.chat-back-btn:hover {
+    color: var(--ws-green);
+}
+
+/* ── Course Buttons ────────────────────────────────────────────── */
+.chat-course-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: var(--ws-white);
+    border: 1.5px solid var(--ws-border);
+    border-radius: 10px;
+    padding: 0.6rem 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+}
+
+.chat-course-btn:hover {
+    border-color: var(--ws-green);
+    background: var(--ws-green-tint);
+    transform: translateY(-1px);
+}
+
+.course-btn-title {
+    font-weight: 600;
+    font-size: 0.82rem;
+    color: var(--ws-navy);
+    line-height: 1.3;
+}
+
+.course-btn-sub {
+    font-size: 0.7rem;
+    color: var(--ws-green);
+    font-weight: 500;
+}
+
+/* ── Course Overview Card ──────────────────────────────────────── */
+.course-overview-card {
+    background: var(--ws-white);
+    border: 1px solid var(--ws-border);
+    border-radius: 12px;
+    padding: 0.85rem;
+}
+
+.course-ov-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.4rem;
+}
+
+.course-ov-badge {
+    background: var(--ws-green);
+    color: white;
+    padding: 0.2rem 0.55rem;
+    border-radius: 50px;
+    font-size: 0.68rem;
+    font-weight: 600;
+}
+
+.course-ov-inst {
+    color: var(--ws-green);
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.course-ov-name {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--ws-navy);
+    margin: 0 0 0.35rem 0;
+}
+
+.course-ov-desc {
+    font-size: 0.8rem;
+    color: var(--ws-gray);
+    line-height: 1.5;
+    margin: 0 0 0.6rem 0;
+}
+
+.course-ov-meta {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.4rem;
+}
+
+.meta-chip {
+    display: flex;
+    flex-direction: column;
+    background: var(--ws-green-tint);
+    border-radius: 8px;
+    padding: 0.4rem;
+    text-align: center;
+}
+
+.meta-chip-label {
+    font-size: 0.62rem;
+    color: var(--ws-gray);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.meta-chip-val {
+    font-size: 0.75rem;
+    color: var(--ws-navy);
+    font-weight: 700;
+}
+
+/* ── Module List ───────────────────────────────────────────────── */
+.module-btn-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.module-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: var(--ws-white);
+    border: 1.5px solid var(--ws-border);
+    border-radius: 10px;
+    padding: 0.55rem 0.8rem;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.2s;
+    text-align: left;
+}
+
+.module-btn:hover {
+    border-color: var(--ws-green);
+    background: var(--ws-green-tint);
+    transform: translateY(-1px);
+}
+
+.module-num {
+    width: 26px;
+    height: 26px;
+    background: var(--ws-green);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.72rem;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.module-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.module-name {
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: var(--ws-navy);
+    line-height: 1.3;
+}
+
+.module-count {
+    font-size: 0.68rem;
+    color: var(--ws-gray);
+}
+
+/* ── Lesson List ───────────────────────────────────────────────── */
+.lesson-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 0.4rem 0;
+}
+
+.lesson-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.35rem 0.6rem;
+    background: var(--ws-white);
+    border-radius: 8px;
+    border: 1px solid var(--ws-border);
+}
+
+.lesson-num {
+    width: 20px;
+    height: 20px;
+    background: var(--ws-green-tint);
+    color: var(--ws-green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.65rem;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.lesson-text {
+    font-size: 0.78rem;
+    color: var(--ws-navy);
+}
+
+/* ── Skill Tags ────────────────────────────────────────────────── */
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    padding: 0.25rem 0;
+}
+
+.skill-tag {
+    display: inline-block;
+    background: var(--ws-green-tint);
+    color: var(--ws-green-dark);
+    padding: 0.25rem 0.55rem;
+    border-radius: 50px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    border: 1px solid rgba(76, 175, 125, 0.2);
+}
+
+/* ── Project List ──────────────────────────────────────────────── */
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    padding: 0.25rem 0;
+}
+
+.project-card {
+    background: var(--ws-white);
+    border: 1px solid var(--ws-border);
+    border-radius: 10px;
+    padding: 0.6rem 0.8rem;
+    transition: border-color 0.2s;
+}
+
+.project-card:hover {
+    border-color: var(--ws-green);
+}
+
+.project-title {
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: var(--ws-navy);
+    margin-bottom: 0.2rem;
+}
+
+.project-meta {
+    display: flex;
+    gap: 0.35rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.2rem;
+}
+
+.project-tag {
+    background: var(--ws-green-tint);
+    color: var(--ws-green-dark);
+    padding: 0.12rem 0.45rem;
+    border-radius: 50px;
+    font-size: 0.65rem;
+    font-weight: 600;
+}
+
+.project-diff, .project-dur {
+    color: var(--ws-gray);
+    font-size: 0.65rem;
+    font-weight: 500;
+}
+
+.project-goal {
+    font-size: 0.75rem;
+    color: var(--ws-gray);
+    line-height: 1.4;
+    margin-top: 0.2rem;
+}
+
+.project-guide {
+    font-size: 0.72rem;
+    color: var(--ws-green);
+    font-weight: 500;
+    margin-top: 0.15rem;
+}
+
+/* ── Certification Box ─────────────────────────────────────────── */
+.cert-box {
+    background: var(--ws-white);
+    border: 1px solid var(--ws-border);
+    border-radius: 10px;
+    padding: 0.8rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+}
+
+.cert-icon {
+    font-size: 1.4rem;
+    flex-shrink: 0;
+}
+
+.cert-content {
+    flex: 1;
+}
+
+.cert-text {
+    font-size: 0.8rem;
+    color: var(--ws-navy);
+    line-height: 1.5;
+    margin: 0 0 0.3rem 0;
+}
+
+.cert-sub {
+    font-size: 0.72rem;
+    color: var(--ws-green);
+    font-weight: 500;
+    margin: 0 0 0.2rem 0;
+}
+
+.cert-note {
+    font-size: 0.72rem;
+    color: var(--ws-gray);
+    margin: 0;
+}
+
+/* ── Fee List ──────────────────────────────────────────────────── */
+.fee-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.fee-card {
+    background: var(--ws-white);
+    border: 1px solid var(--ws-border);
+    border-radius: 10px;
+    padding: 0.6rem 0.8rem;
+    transition: border-color 0.2s;
+    cursor: pointer;
+}
+
+.fee-card:hover {
+    border-color: var(--ws-green);
+}
+
+.fee-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.25rem;
+}
+
+.fee-card-name {
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: var(--ws-navy);
+}
+
+.fee-card-inst {
+    font-size: 0.68rem;
+    color: var(--ws-green);
+    font-weight: 500;
+}
+
+.fee-card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fee-card-price {
+    font-size: 0.95rem;
+    font-weight: 800;
+    color: var(--ws-navy);
+}
+
+.fee-card-emi {
+    font-size: 0.7rem;
+    color: var(--ws-gray);
+}
+
+.fee-note {
+    font-size: 0.72rem;
+    color: var(--ws-gray);
+    font-style: italic;
+    margin: 0.3rem 0 0 0;
+}
+
+/* ── Fee Detail Box ────────────────────────────────────────────── */
+.fee-detail-box {
+    background: var(--ws-green-tint);
+    border: 1.5px solid var(--ws-green);
+    border-radius: 10px;
+    padding: 0.8rem;
+}
+
+.fee-detail-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem 0;
+}
+
+.fee-detail-label {
+    font-size: 0.78rem;
+    color: var(--ws-gray);
+    font-weight: 500;
+}
+
+.fee-detail-val {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--ws-navy);
+}
+
+.fee-detail-val.big {
+    font-size: 1.05rem;
+}
+
+.fee-detail-note {
+    font-size: 0.72rem;
+    color: var(--ws-gray);
+    margin-top: 0.4rem;
+    padding-top: 0.4rem;
+    border-top: 1px solid rgba(76, 175, 125, 0.2);
+}
+
+/* ── Step List (Admission) ─────────────────────────────────────── */
+.step-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.step-item {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: var(--ws-white);
+    border: 1px solid var(--ws-border);
+    border-radius: 10px;
+    padding: 0.55rem 0.8rem;
+}
+
+.step-num {
+    width: 26px;
+    height: 26px;
+    background: var(--ws-green);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.72rem;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.step-text {
+    font-size: 0.8rem;
+    color: var(--ws-navy);
+    line-height: 1.4;
+}
+
+.admission-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    padding: 0.5rem 0;
+}
+
+.admission-stat {
+    font-size: 0.78rem;
+    color: var(--ws-navy);
+}
+
+/* ── Eligibility Box ───────────────────────────────────────────── */
+.eligibility-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.elig-section {
+    font-size: 0.82rem;
+    color: var(--ws-navy);
+    line-height: 1.5;
+}
+
+.audience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.audience-item {
+    display: flex;
+    flex-direction: column;
+    background: var(--ws-white);
+    border: 1px solid var(--ws-border);
+    border-radius: 8px;
+    padding: 0.5rem 0.7rem;
+}
+
+.audience-type {
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: var(--ws-navy);
+}
+
+.audience-detail {
+    font-size: 0.72rem;
+    color: var(--ws-gray);
+}
+
+/* ── Enrollment Box ────────────────────────────────────────────── */
+.enroll-box {
+    background: var(--ws-green-tint);
+    border: 1.5px solid var(--ws-green);
+    border-radius: 10px;
+    padding: 0.8rem;
+}
+
+.enroll-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.25rem 0;
+}
+
+.enroll-label {
+    font-size: 0.78rem;
+    color: var(--ws-gray);
+    font-weight: 500;
+}
+
+.enroll-val {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--ws-navy);
+}
+
+.enroll-cta {
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid rgba(76, 175, 125, 0.2);
+}
+
+.enroll-cta p {
+    font-size: 0.8rem;
+    color: var(--ws-navy);
+    margin: 0 0 0.2rem 0;
+    line-height: 1.5;
+}
+
+.enroll-note {
+    font-size: 0.72rem;
+    color: var(--ws-gray);
+    font-style: italic;
+}
+
+/* ── Apply Box ─────────────────────────────────────────────────── */
+.apply-box {
+    background: var(--ws-white);
+    border: 1px solid var(--ws-border);
+    border-radius: 10px;
+    padding: 0.8rem;
+}
+
+.apply-box p {
+    font-size: 0.82rem;
+    color: var(--ws-navy);
+    margin: 0 0 0.3rem 0;
+    line-height: 1.5;
+}
+
+.apply-note {
+    font-size: 0.72rem;
+    color: var(--ws-gray);
+    font-style: italic;
+}
+
+/* ── Contact Box ───────────────────────────────────────────────── */
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contact-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    background: var(--ws-white);
+    border: 1px solid var(--ws-border);
+    border-radius: 10px;
+    padding: 0.6rem 0.8rem;
+}
+
+.contact-icon {
+    font-size: 1.2rem;
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-val {
+    font-size: 0.82rem;
+    color: var(--ws-navy);
+    font-weight: 600;
+}
+
+.contact-val.small {
+    font-size: 0.72rem;
+    color: var(--ws-gray);
+    font-weight: 400;
+}
+
+.contact-note {
+    font-size: 0.72rem;
+    color: var(--ws-gray);
+    font-style: italic;
+    padding: 0.3rem 0;
+}
+
+/* ── Placement Box ─────────────────────────────────────────────── */
+.placement-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.placement-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.4rem;
+}
+
+.p-stat {
+    display: flex;
+    flex-direction: column;
+    background: var(--ws-green-tint);
+    border-radius: 10px;
+    padding: 0.55rem;
+    text-align: center;
+}
+
+.p-stat-num {
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--ws-navy);
+}
+
+.p-stat-label {
+    font-size: 0.65rem;
+    color: var(--ws-gray);
+    font-weight: 500;
+}
+
+.placement-section {
+    font-size: 0.8rem;
+    color: var(--ws-navy);
+    margin-top: 0.2rem;
+}
+
+.placement-list {
+    list-style: none;
+    padding: 0;
+    margin: 0.2rem 0 0 0;
+}
+
+.placement-list li {
+    font-size: 0.78rem;
+    color: var(--ws-gray);
+    padding: 0.15rem 0 0.15rem 1rem;
+    position: relative;
+}
+
+.placement-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0.2rem;
+    color: var(--ws-green);
+    font-weight: 700;
+}
+
+.what-get-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    margin-top: 0.3rem;
+}
+
+.what-get-tag {
+    background: var(--ws-green-tint);
+    color: var(--ws-green-dark);
+    padding: 0.2rem 0.5rem;
+    border-radius: 50px;
+    font-size: 0.68rem;
+    font-weight: 600;
+}
+
+.placement-note {
+    font-size: 0.7rem;
+    color: var(--ws-gray);
+    font-style: italic;
+    margin-top: 0.3rem;
+}
+
+/* ── Mentor List ───────────────────────────────────────────────── */
+.mentor-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.mentor-card {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: var(--ws-white);
+    border: 1px solid var(--ws-border);
+    border-radius: 10px;
+    padding: 0.6rem 0.8rem;
+}
+
+.mentor-avatar {
+    width: 36px;
+    height: 36px;
+    background: var(--ws-green);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+}
+
+.mentor-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.mentor-name {
+    font-weight: 600;
+    font-size: 0.82rem;
+    color: var(--ws-navy);
+}
+
+.mentor-role {
+    font-size: 0.72rem;
+    color: var(--ws-green);
+    font-weight: 500;
+}
+
+.mentor-projects {
+    font-size: 0.68rem;
+    color: var(--ws-gray);
+    margin-top: 0.1rem;
+}
+
+/* ── Tool Category ─────────────────────────────────────────────── */
+.tool-cat-name {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--ws-navy);
+    margin: 0.3rem 0 0.15rem 0;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+/* ── Campus Box ────────────────────────────────────────────────── */
+.campus-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.campus-row {
+    font-size: 0.82rem;
+    color: var(--ws-navy);
+    line-height: 1.5;
+}
+
+.campus-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+}
+
+.campus-feature-tag {
+    background: var(--ws-green-tint);
+    color: var(--ws-green-dark);
+    padding: 0.2rem 0.5rem;
+    border-radius: 50px;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.campus-section {
+    font-size: 0.8rem;
+    color: var(--ws-navy);
+    font-weight: 600;
+    margin-top: 0.3rem;
+}
+
+.campus-flow {
+    padding-left: 1.2rem;
+    margin: 0.2rem 0;
+}
+
+.campus-flow li {
+    font-size: 0.78rem;
+    color: var(--ws-gray);
+    padding: 0.12rem 0;
+}
+
+/* ── About Box ─────────────────────────────────────────────────── */
+.about-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.about-row {
+    font-size: 0.82rem;
+    color: var(--ws-navy);
+    line-height: 1.5;
+}
+
+.about-desc {
+    font-size: 0.8rem;
+    color: var(--ws-gray);
+    line-height: 1.5;
+}
+
+.values-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.value-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--ws-white);
+    border: 1px solid var(--ws-border);
+    border-radius: 8px;
+    padding: 0.45rem 0.7rem;
+}
+
+.value-name {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--ws-navy);
+}
+
+.value-theme {
+    font-size: 0.7rem;
+    color: var(--ws-green);
+    font-weight: 500;
+}
+
+/* ── Reviews Box ───────────────────────────────────────────────── */
+.reviews-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.review-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.4rem 0;
+}
+
+.review-stars {
+    font-size: 1rem;
+}
+
+.review-num {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--ws-navy);
+}
+
+.review-count {
+    font-size: 0.75rem;
+    color: var(--ws-gray);
+}
+
+.review-examples {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.review-item {
+    background: var(--ws-white);
+    border: 1px solid var(--ws-border);
+    border-radius: 8px;
+    padding: 0.5rem 0.7rem;
+}
+
+.review-name {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--ws-navy);
+    margin-bottom: 0.15rem;
+}
+
+.review-summary {
+    font-size: 0.75rem;
+    color: var(--ws-gray);
+    line-height: 1.4;
+}
+
+.review-note {
+    font-size: 0.7rem;
+    color: var(--ws-gray);
+    font-style: italic;
+}
+
+/* ── FAQ List ──────────────────────────────────────────────────── */
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.faq-item {
+    background: var(--ws-white);
+    border: 1px solid var(--ws-border);
+    border-radius: 10px;
+    padding: 0.6rem 0.8rem;
+}
+
+.faq-q {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--ws-navy);
+    margin-bottom: 0.25rem;
+}
+
+.faq-a {
+    font-size: 0.78rem;
+    color: var(--ws-gray);
+    line-height: 1.5;
+}
+
+.faq-link-btn {
+    background: none;
+    border: none;
+    color: var(--ws-green);
+    font-size: 0.78rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    transition: color 0.2s;
+}
+
+.faq-link-btn:hover {
+    color: var(--ws-green-dark);
+}
+
+/* ── Main Menu Button ─────────────────────────────────────────── */
+.chat-main-menu-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    background: none;
+    border: none;
+    color: var(--ws-gray);
+    font-size: 0.75rem;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0.35rem 0;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    transition: color 0.2s;
+    margin-top: 0.15rem;
+}
+
+.chat-main-menu-btn:hover {
+    color: var(--ws-green);
+}
+
+/* ── Disabled State ───────────────────────────────────────────── */
+.chat-action-btn:disabled,
+.chat-course-btn:disabled,
+.module-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   Responsive
+   ═══════════════════════════════════════════════════════════════════ */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .hero-collage {
+        grid-template-columns: 1fr;
+    }
+
+    .collage-main {
+        grid-column: span 1;
+    }
+
+    .chat-panel {
+        width: calc(100vw - 32px);
+        right: -8px;
+        height: 480px;
+    }
+
+    .stat-number {
+        font-size: 1.8rem;
+    }
+
+    .course-ov-meta {
+        grid-template-columns: 1fr;
+    }
+
+    .placement-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .chat-course-btn {
+        width: 100%;
+    }
+
+    .chat-action-btn {
+        min-height: 36px;
+        padding: 0.5rem 0.8rem;
+        font-size: 0.8rem;
+    }
+
+    .chat-btn-grid {
+        gap: 0.4rem;
+    }
+
+    .module-btn {
+        min-height: 44px;
+    }
+
+    .step-item {
+        min-height: 44px;
+    }
+}
+
+@media (max-width: 380px) {
+    .chat-panel {
+        width: 100vw;
+        right: -16px;
+        height: 100vh;
+        border-radius: 0;
+        top: 0;
+        bottom: 0;
+    }
+
+    .chat-action-btn {
+        font-size: 0.78rem;
+        padding: 0.55rem 0.7rem;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <div class="ws-logo">W</div>
+                <span class="ms-2 fw-bold" style="color: var(--ws-navy);">Workskills</span>
+                <span class="fw-bold ms-1" style="color: var(--ws-green);">X</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hire">Hire with Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6 hero-text">
+                    <p class="hero-badge">IIT Certified Programs</p>
+                    <h1 class="hero-title">
+                        Learn from top <span class="text-green">1%</span> Instructors
+                    </h1>
+                    <p class="hero-subtitle">
+                        India's #1 Platform for IIT Certified Programs. Built by IIT Kharagpur alumni.
+                        Master in-demand skills with live projects, guaranteed internships, and 100% placement assistance.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#" class="btn btn-ws-primary btn-lg me-3">Register Now</a>
+                        <a href="#features" class="btn btn-ws-secondary btn-lg">Explore Tracks</a>
+                    </div>
+                    <div class="hero-badges mt-4">
+                        <span class="badge-item">IIT Certified</span>
+                        <span class="badge-item">100% Job Assured</span>
+                        <span class="badge-item">Live Projects</span>
+                    </div>
+                </div>
+                <div class="col-lg-6 hero-visual">
+                    <div class="hero-image-wrapper">
+                        <div class="hero-collage">
+                            <div class="collage-card collage-main">
+                                <div class="student-emoji">&#127891;</div>
+                                <p>2000+ Students Placed</p>
+                            </div>
+                            <div class="collage-card collage-secondary">
+                                <div class="student-emoji">&#128187;</div>
+                                <p>Live Projects</p>
+                            </div>
+                            <div class="collage-card collage-tertiary">
+                                <div class="student-emoji">&#127942;</div>
+                                <p>IIT Certification</p>
+                            </div>
+                        </div>
+                        <div class="company-badges">
+                            <span class="company-badge">Amazon</span>
+                            <span class="company-badge">Swiggy</span>
+                            <span class="company-badge">TCS</span>
+                            <span class="company-badge">IBM</span>
+                            <span class="company-badge">Deloitte</span>
+                            <span class="company-badge">Cognizant</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section" id="features">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3 col-6">
+                    <div class="stat-card">
+                        <div class="stat-icon">&#128101;</div>
+                        <h3 class="stat-number">2000+</h3>
+                        <p class="stat-label">Students Placed</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-card">
+                        <div class="stat-icon">&#9989;</div>
+                        <h3 class="stat-number">100%</h3>
+                        <p class="stat-label">Placement Assistance</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-card">
+                        <div class="stat-icon">&#128200;</div>
+                        <h3 class="stat-number">50%</h3>
+                        <p class="stat-label">Avg. Salary Increase</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-card">
+                        <div class="stat-icon">&#127970;</div>
+                        <h3 class="stat-number">500+</h3>
+                        <p class="stat-label">Hiring Companies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="programs-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">
+                    Our <span class="text-green">Programs</span>
+                </h2>
+                <p class="section-subtitle">IIT-certified programs designed to make you industry-ready</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="program-card">
+                        <div class="program-badge">Flagship</div>
+                        <h4>AI & ML Certification</h4>
+                        <p class="program-institute">IIT Patna</p>
+                        <div class="program-price">&#8377;54,000</div>
+                        <a href="#" class="btn btn-ws-primary w-100 mt-3">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="program-card">
+                        <div class="program-badge">Beginner Friendly</div>
+                        <h4>Data Analytics Certification</h4>
+                        <p class="program-institute">IIT Patna</p>
+                        <div class="program-price">&#8377;38,000</div>
+                        <a href="#" class="btn btn-ws-primary w-100 mt-3">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="program-card">
+                        <div class="program-badge">Industry Ready</div>
+                        <h4>AI Business Analytics</h4>
+                        <p class="program-institute">IIT Bombay</p>
+                        <div class="program-price">&#8377;65,000</div>
+                        <a href="#" class="btn btn-ws-primary w-100 mt-3">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="hire">
+        <div class="container text-center">
+            <h2 class="cta-title">
+                Ready to <span class="text-green">Transform</span> Your Career?
+            </h2>
+            <p class="cta-subtitle">Join 2000+ students who have already launched their careers with Workskills X</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-ws-primary btn-lg me-3">Request Callback</a>
+                <a href="#" class="btn btn-ws-secondary btn-lg">Explore Tracks</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="ws-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="ws-logo">W</div>
+                        <span class="ms-2 fw-bold fs-5" style="color: white;">Workskills</span>
+                        <span class="fw-bold fs-5 ms-1" style="color: var(--ws-green);">X</span>
+                    </div>
+                    <p class="footer-text">India's #1 Platform for IIT Certified Programs. Bridging the gap between education and employment.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="footer-heading">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Programs</a></li>
+                        <li><a href="#">Hire with Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="footer-heading">Contact</h5>
+                    <p class="footer-text">support@workskills.in</p>
+                    <p class="footer-text">+91 8949655441</p>
+                    <p class="footer-text">Jaipur, Rajasthan</p>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <p class="text-center footer-copyright">&copy; 2026 Workskills X. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget" id="chatWidget">
+        <!-- Chat Launcher Button -->
+        <button class="chat-launcher" id="chatLauncher" aria-label="Open chat">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white" viewBox="0 0 24 24">
+                <path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7v1a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-1H4a1 1 0 0 1-1-1v-1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2zm-1 14h2a1 1 0 0 1 1 1v1H9v-1a1 1 0 0 1 1-1zM7.5 9A1.5 1.5 0 0 0 6 10.5 1.5 1.5 0 0 0 7.5 12 1.5 1.5 0 0 0 9 10.5 1.5 1.5 0 0 0 7.5 9zm9 0A1.5 1.5 0 0 0 15 10.5 1.5 1.5 0 0 0 16.5 12 1.5 1.5 0 0 0 18 10.5 1.5 1.5 0 0 0 16.5 9z"/>
+            </svg>
+        </button>
+
+        <!-- Chat Panel -->
+        <div class="chat-panel d-none" id="chatPanel">
+            <div class="chat-header">
+                <div class="d-flex align-items-center">
+                    <div class="ws-logo-sm">W</div>
+                    <div class="ms-2">
+                        <h6 class="mb-0 chat-header-title">Workskills Assistant</h6>
+                        <small class="chat-header-status">Online</small>
+                    </div>
+                </div>
+                <button class="chat-close" id="chatClose" aria-label="Close chat">&times;</button>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="chat-message bot-message">
+                    <div class="message-bubble bot-bubble">
+                        Hi there! I'm the Workskills assistant. I can help you explore courses, check fees, understand the admission process, or answer any questions you have.
+                    </div>
+                </div>
+                <div class="chat-message bot-message">
+                    <div class="bot-block" id="welcomeButtons">
+                        <div class="chat-btn-grid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-input-area">
+                <form id="chatForm" class="chat-form">
+                    <input type="text" id="chatInput" class="chat-input" placeholder="Type your message..." autocomplete="off">
+                    <button type="submit" class="chat-send" id="chatSend" aria-label="Send message">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" viewBox="0 0 16 16">
+                            <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.209L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+    const chatLauncher = document.getElementById("chatLauncher");
+    const chatPanel = document.getElementById("chatPanel");
+    const chatClose = document.getElementById("chatClose");
+    const chatForm = document.getElementById("chatForm");
+    const chatInput = document.getElementById("chatInput");
+    const chatSend = document.getElementById("chatSend");
+    const chatMessages = document.getElementById("chatMessages");
+
+    let isSending = false;
+    let kb = null;
+    let navStack = [];
+    let selectedCourseId = null;
+    let lastIntent = null;
+
+    // ── Friendly Openers (rotated naturally) ─────────────────────
+    const OPENERS = [
+        "Sure!",
+        "Absolutely!",
+        "Great choice!",
+        "Of course!",
+        "Here's what I found.",
+        "Let me help you with that.",
+        "Here you go.",
+        "Here's the information.",
+        "Let's take a look.",
+        "Here's what you need to know.",
+    ];
+    function opener() {
+        return OPENERS[Math.floor(Math.random() * OPENERS.length)];
+    }
+
+    // ── Intent Keywords (English + Tamil/Tanglish) ───────────────
+    const INTENTS = {
+        courses: [
+            "course", "courses", "program", "programs", "what do you offer",
+            "what courses", "which courses", "show me courses", "all courses",
+            "list of courses", "available courses", "what can i learn",
+            "what do you teach", "tracks", "specializations",
+            "enna courses", "enna program", "course irukka", "course irukku",
+            "epa courses", "yaaru courses", "what courses la",
+            "show courses", "browse courses",
+        ],
+        admission: [
+            "admission", "apply", "application", "enroll", "enrollment",
+            "how to join", "i want to join", "how do i join", "how to apply",
+            "admission process", "application process", "registration",
+            "how can i apply", "how to get admission", "how do i enroll",
+            "join panrathu", "join panna", "admission epdi", "admission epadi",
+            "apply panna", "apply epdi", "enrollment epdi", "register epdi",
+            "epdi join", "epdi apply", "join pannanum",
+        ],
+        contact: [
+            "contact", "phone", "email", "call", "whatsapp", "talk to",
+            "talk to someone", "reach you", "support", "help me",
+            "contact details", "contact info", "contact workskills",
+            "how can i contact", "how can i reach", "get in touch",
+            "phone number", "number", "contact panna", "contact epdi",
+            "phone epdi", "call panna", "whatsapp irukka",
+        ],
+        fees: [
+            "fee", "fees", "price", "cost", "how much", "payment",
+            "pay", "expensive", "cheap", "affordable", "emi", "installment",
+            "course fee", "course price", "course cost", "what is the fee",
+            "how much does it cost", "can i pay online", "payment options",
+            "fees evlo", "evlo cost", "evlo fee", "price evlo",
+            "how much cost", "evlo", "cost evlo",
+        ],
+        eligibility: [
+            "eligible", "eligibility", "who can join", "requirements",
+            "prerequisite", "qualify", "qualification", "can i join",
+            "am i eligible", "who is this for",
+            "en paakalaam", "naan join panna mudiyuma",
+            "eligible ah", "eligibility enna",
+        ],
+        placement: [
+            "placement", "job", "career", "hired", "hire", "work",
+            "employment", "salary", "package", "after course", "after training",
+            "will i get a job", "career support", "placement assistance",
+            "job assurance", "job assured", "what happens after",
+            "placement irukka", "job kidaikuma", "placement support",
+            "career support irukka",
+        ],
+        curriculum: [
+            "curriculum", "syllabus", "modules", "topics", "what will i learn",
+            "course content", "course structure", "what is taught",
+            "syllabus enna", "modules enna", "epdi teach",
+        ],
+        projects: [
+            "project", "projects", "live project", "real project", "portfolio",
+            "practical", "hands-on", "capstone",
+            "project irukka", "projects enna",
+        ],
+        certification: [
+            "certification", "certificate", "certified", "iit certificate",
+            "will i get a certificate", "what certificate",
+            "certificate kidaikuma", "certification irukka",
+        ],
+        mentors: [
+            "mentor", "instructor", "teacher", "faculty", "who teaches",
+            "who will teach", "guide", "coaching",
+            "yaar teach", "mentor irukka",
+        ],
+        tools: [
+            "tools", "software", "technologies", "tech stack", "what tools",
+            "what software", "what technologies",
+            "tools enna", "software enna",
+        ],
+        campus: [
+            "campus", "location", "where", "offline", "online", "batch",
+            "timing", "schedule", "class", "venue",
+            "campus enna", "location enna", "enga irukku",
+        ],
+        values: [
+            "values", "mission", "vision", "about workskills", "who are you",
+            "what is workskills", "tell me about workskills",
+            "workskills enna", "neenga yaar",
+        ],
+        reviews: [
+            "review", "rating", "feedback", "testimonials", "what do students say",
+            "student reviews", "how is the quality",
+            "review irukka", "rating enna",
+        ],
+        about: [
+            "about", "who are you", "tell me about", "what is workskills",
+            "worksksills enna", "neenga yaar", "about workskills",
+        ],
+        faq: [
+            "faq", "faqs", "frequently asked", "common questions",
+            "doubts", "questions", "enna doubt",
+        ],
+    };
+
+
+    // ── Hardcoded Knowledge Base ────────────────────────────────────
+    const HARDCODED_KB = {
+        "courses_full": [
+                {
+                        "id": "generative-ai-certification",
+                        "full_id": "iit-patna-generative-ai-certification",
+                        "name": "IIT Patna Generative AI Certification",
+                        "short_name": "Generative AI Certification",
+                        "institute": "IIT Patna",
+                        "positioning": "Beginner to Pro",
+                        "fee": 31000,
+                        "emi": {
+                                "amount_inr": 2300,
+                                "installments": 12
+                        }
+                },
+                {
+                        "id": "data-analytics",
+                        "full_id": "iit-patna-data-analytics-certification",
+                        "name": "IIT Patna Data Analytics Certification",
+                        "short_name": "Data Analytics Certification",
+                        "institute": "IIT Patna",
+                        "positioning": "Beginner Friendly",
+                        "fee": 38000,
+                        "emi": {
+                                "amount_inr": 2307,
+                                "installments": 15
+                        }
+                },
+                {
+                        "id": "ai-business-analytics-certification",
+                        "full_id": "iit-bombay-ai-business-analytics-certification",
+                        "name": "IIT Bombay AI Business Analytics Certification",
+                        "short_name": "AI Business Analytics Certification",
+                        "institute": "IIT Bombay",
+                        "positioning": "Industry Ready",
+                        "fee": 65000,
+                        "emi": {
+                                "amount_inr": 5242,
+                                "installments": 12
+                        }
+                },
+                {
+                        "id": "ai-product-management-certification",
+                        "full_id": "iit-patna-ai-product-management-certification",
+                        "name": "IIT Patna AI Product Management Certification",
+                        "short_name": "AI Product Management Certification",
+                        "institute": "IIT Patna",
+                        "positioning": "100% Job Assistance",
+                        "fee": 45000,
+                        "emi": {
+                                "amount_inr": 2312,
+                                "installments": 18
+                        }
+                },
+                {
+                        "id": "ai-project-management-certification",
+                        "full_id": "iit-guwahati-ai-project-management-certification",
+                        "name": "IIT Guwahati AI Project Management Certification",
+                        "short_name": "AI Project Management Certification",
+                        "institute": "IIT Guwahati",
+                        "positioning": "Leadership Track",
+                        "fee": 72000,
+                        "emi": {
+                                "amount_inr": 5717,
+                                "installments": 12
+                        }
+                },
+                {
+                        "id": "ai-and-ml-certification",
+                        "full_id": "iit-patna-ai-and-ml-certification",
+                        "name": "IIT Patna AI and ML Certification",
+                        "short_name": "AI and ML Certification",
+                        "institute": "IIT Patna",
+                        "positioning": "Flagship Program",
+                        "fee": 54000,
+                        "emi": {
+                                "amount_inr": 2109,
+                                "installments": 24
+                        }
+                }
+        ],
+        "analytics_program": {
+                "name": "Data Analytics with AI",
+                "positioning": "Job Assured Program",
+                "eligibility": {
+                        "degrees": [
+                                "B.Tech",
+                                "BBA",
+                                "B.Com",
+                                "B.Sc"
+                        ],
+                        "audiences": [
+                                {
+                                        "type": "Final-year college students",
+                                        "detail": "Open to all degrees and branches"
+                                },
+                                {
+                                        "type": "Career-break graduates",
+                                        "detail": "1-5 years of gap after graduation"
+                                },
+                                {
+                                        "type": "Working professionals",
+                                        "detail": "1-5 years of experience"
+                                },
+                                {
+                                        "type": "Students",
+                                        "detail": "12th pass through 3rd year college"
+                                }
+                        ]
+                },
+                "duration": {
+                        "industrial_training_weeks": "8-12",
+                        "internship_live_project_weeks": 4,
+                        "job_assistance": "After internship"
+                },
+                "placement_claims": {
+                        "job_assistance": true,
+                        "average_ctc_lpa": "5.0-8.0",
+                        "guaranteed_minimum_ctc_lpa": 5,
+                        "pay_zero_if_unplaced": true,
+                        "full_refund_if_offer_below_lpa": 5,
+                        "disclaimer": "Website claims and may be subject to eligibility/terms."
+                },
+                "benefits": [
+                        "AI specialization",
+                        "ChatGPT and 40+ AI tools",
+                        "Real-world training",
+                        "Expert supervision",
+                        "IIT KGP certificate",
+                        "Internship experience",
+                        "Internship stipends up to 15K/month",
+                        "4+ startup live projects",
+                        "100% job assurance claim"
+                ],
+                "program_structure": [
+                        {
+                                "phase": "Phase 01",
+                                "duration": "8 Weeks Training",
+                                "description": "Theory, tools and job skills through industrial training."
+                        },
+                        {
+                                "phase": "Phase 02",
+                                "duration": "4 Weeks Internship",
+                                "description": "Real-world internship/live-project experience."
+                        },
+                        {
+                                "phase": "Phase 03",
+                                "duration": "Job Assistance",
+                                "description": "Career assistance to convert internship experience into a full-time job."
+                        }
+                ],
+                "certifications": [
+                        "IIT certification",
+                        "Google certification",
+                        "Startup certifications"
+                ],
+                "pricing": {
+                        "standard_fee_inr": 33322,
+                        "fee_note": "+ GST",
+                        "enrolment_amount_inr": 2999,
+                        "enrolment_note": "+ GST",
+                        "job_assurance_message": "Pay 0 if Unplaced",
+                        "minimum_ctc_claim_lpa": 5,
+                        "full_refund_if_below_lpa": 5,
+                        "rating_shown": 4.7,
+                        "ratings_count_shown": "3,500+"
+                },
+                "curriculum": [
+                        {
+                                "name": "Business Knowledge",
+                                "lesson_count": 10,
+                                "lessons": [
+                                        "Problem to Objective to Outcome mapping",
+                                        "North Star metric and KPI trees",
+                                        "Funnel math: Awareness to Purchase to Retention",
+                                        "Segmentation: RFM, CLV, personas",
+                                        "Business questions to Data questions",
+                                        "Impact vs effort prioritization",
+                                        "ROI estimation and back-of-envelope models",
+                                        "Requirement briefs and stakeholder alignment",
+                                        "Risk, assumptions, constraints log",
+                                        "Decision narratives and executive one-pager"
+                                ]
+                        },
+                        {
+                                "name": "Data Frameworks 101",
+                                "lesson_count": 10,
+                                "lessons": [
+                                        "Data lifecycle: collect, store, transform, use",
+                                        "Analytics layers: ELT/ETL, semantic models",
+                                        "Metric definitions and governance",
+                                        "Cohorts vs cross-sectional views",
+                                        "Time series and seasonality patterns",
+                                        "Data modeling: star and snowflake",
+                                        "Documentation: catalogs and dictionaries",
+                                        "Quality dimensions: accuracy, completeness, timeliness",
+                                        "Privacy and data ethics basics",
+                                        "Operational analytics vs BI vs ML"
+                                ]
+                        },
+                        {
+                                "name": "Excel / Google Sheets",
+                                "lesson_count": 10,
+                                "lessons": [
+                                        "Data import, validation, constraints",
+                                        "Pivot tables and VLOOKUP/XLOOKUP",
+                                        "Conditional formatting and data bars",
+                                        "SUMIFS, COUNTIFS, INDEX-MATCH",
+                                        "Line, bar, area and scatter charts",
+                                        "Basic dashboards and slicers",
+                                        "Data cleaning with text functions and Power Query",
+                                        "What-if analysis and Goal Seek",
+                                        "Automation basics with macros",
+                                        "Collaboration and sharing"
+                                ]
+                        },
+                        {
+                                "name": "Exploratory Data Analysis",
+                                "lesson_count": 9,
+                                "lessons": [
+                                        "Descriptive statistics and distributions",
+                                        "Histograms, box plots, scatter plots",
+                                        "Outlier detection and treatment",
+                                        "Correlation and covariance",
+                                        "Trend analysis and seasonality",
+                                        "Data quality checks",
+                                        "Feature engineering basics",
+                                        "Reporting and storytelling",
+                                        "Dashboard fundamentals"
+                                ]
+                        },
+                        {
+                                "name": "Statistics and Probability",
+                                "lesson_count": 9,
+                                "lessons": [
+                                        "Data summarization and sampling",
+                                        "Probability distributions",
+                                        "Inferential statistics and estimation",
+                                        "Hypothesis testing and p-values",
+                                        "Confidence intervals",
+                                        "Correlation vs causation",
+                                        "ANOVA and t-tests",
+                                        "Bayesian thinking",
+                                        "Experimental design basics"
+                                ]
+                        },
+                        {
+                                "name": "SQL / Data Wrangling",
+                                "lesson_count": 10,
+                                "lessons": [
+                                        "SELECT and WHERE",
+                                        "JOIN types and set operations",
+                                        "Aggregations and GROUP BY",
+                                        "Window functions and ranking",
+                                        "Subqueries and CTEs",
+                                        "Indexes and query optimization",
+                                        "Data types and constraints",
+                                        "Transactions and ACID properties",
+                                        "Views and materialized views",
+                                        "Security and permissions"
+                                ]
+                        },
+                        {
+                                "name": "Data Visualization",
+                                "lesson_count": 9,
+                                "lessons": [
+                                        "Tableau: connecting and aggregating",
+                                        "Tableau: visual analytics and KPIs",
+                                        "Tableau: dashboards and stories",
+                                        "Power BI: data models and DAX",
+                                        "Power BI: interactive dashboards",
+                                        "Chart types and best practices",
+                                        "Color theory and design principles",
+                                        "BI vs visualization tools",
+                                        "Reporting and sharing"
+                                ]
+                        },
+                        {
+                                "name": "Python",
+                                "lesson_count": 10,
+                                "lessons": [
+                                        "Python basics: types, loops and functions",
+                                        "NumPy and array operations",
+                                        "Pandas for data manipulation",
+                                        "Matplotlib and Seaborn",
+                                        "Exploratory data analysis in Python",
+                                        "Statistical modeling and scikit-learn",
+                                        "Data storytelling and communication",
+                                        "Packaging and reproducibility",
+                                        "Deployment basics",
+                                        "Python project case study"
+                                ]
+                        },
+                        {
+                                "name": "Placement Preparation",
+                                "lesson_count": 10,
+                                "lessons": [
+                                        "Building a data portfolio",
+                                        "Interview preparation and mock sessions",
+                                        "Resume and LinkedIn optimization",
+                                        "Technical vs HR interviews",
+                                        "Negotiating offers and salaries",
+                                        "Career paths in analytics",
+                                        "Networking and professional etiquette",
+                                        "Freelancing and side projects",
+                                        "Building a personal brand",
+                                        "Continuous learning and upskilling"
+                                ]
+                        },
+                        {
+                                "name": "Advanced Topics",
+                                "lesson_count": 10,
+                                "lessons": [
+                                        "Feature engineering and selection",
+                                        "Time series forecasting",
+                                        "Classification and clustering",
+                                        "Recommender systems",
+                                        "Natural language processing",
+                                        "Deep learning fundamentals",
+                                        "Model evaluation and tuning",
+                                        "Production ML and MLOps",
+                                        "Ethical AI and bias mitigation",
+                                        "Capstone project overview"
+                                ]
+                        }
+                ]
+        },
+        "live_projects": [
+                {
+                        "title": "Flipkart - SKU Demand Forecasting for Festive Sale",
+                        "area": "Forecasting",
+                        "difficulty": "Intermediate",
+                        "duration": "8-10 hours",
+                        "data_size": "1.2M rows",
+                        "goal": "Build a weekly demand model for top 500 SKUs.",
+                        "guide": "Karan Gupta"
+                },
+                {
+                        "title": "PhonePe - Cohort Retention and LTV Segmentation",
+                        "area": "Growth",
+                        "difficulty": "Intermediate",
+                        "duration": "6 hours",
+                        "data_size": "5M sample events",
+                        "goal": "Create weekly cohorts, compute retention/LTV and segment by geography/device.",
+                        "guide": "Meera Nair"
+                },
+                {
+                        "title": "Zomato - Menu A/B Test",
+                        "area": "Experimentation",
+                        "difficulty": "Intermediate",
+                        "duration": "5-6 hours",
+                        "data_size": "200K sessions",
+                        "goal": "Design an A/B test for a menu layout.",
+                        "guide": "Aisha Khan"
+                },
+                {
+                        "title": "Meesho - Seller Performance Dashboard",
+                        "area": "BI",
+                        "difficulty": "Beginner-Plus",
+                        "duration": "4-5 hours",
+                        "data_size": "120K rows",
+                        "goal": "Model orders, returns and reviews; build a scorecard with drill-through and DAX measures.",
+                        "guide": "Devanshi Patel"
+                }
+        ],
+        "project_guides": [
+                {
+                        "name": "Karan Gupta",
+                        "role": "Risk Analyst",
+                        "projects": [
+                                "Flipkart - SKU Demand Forecasting for Festive Sale"
+                        ]
+                },
+                {
+                        "name": "Meera Nair",
+                        "role": "Growth Analyst",
+                        "projects": [
+                                "PhonePe - Cohort Retention and LTV Segmentation"
+                        ]
+                },
+                {
+                        "name": "Aisha Khan",
+                        "role": "Data Scientist",
+                        "projects": [
+                                "Zomato - Menu A/B Test"
+                        ]
+                },
+                {
+                        "name": "Devanshi Patel",
+                        "role": "BI Specialist",
+                        "projects": [
+                                "Meesho - Seller Performance Dashboard"
+                        ]
+                }
+        ],
+        "tools": {
+                "categories": {
+                        "data_analytics_bi": [
+                                "Excel",
+                                "Google Sheets",
+                                "Power BI",
+                                "Tableau",
+                                "Google Analytics",
+                                "Looker",
+                                "Metabase",
+                                "Mode",
+                                "Apache Superset"
+                        ],
+                        "generative_ai": [
+                                "ChatGPT",
+                                "Claude",
+                                "Gemini",
+                                "Cohere",
+                                "LangChain",
+                                "LlamaIndex",
+                                "Pinecone",
+                                "Hugging Face"
+                        ],
+                        "data_science_programming": [
+                                "SQL",
+                                "Python",
+                                "R",
+                                "Jupyter",
+                                "NumPy",
+                                "pandas",
+                                "scikit-learn",
+                                "TensorFlow",
+                                "PyTorch"
+                        ]
+                }
+        },
+        "contact": {
+                "homepage": {
+                        "phone": "+91 8949655441",
+                        "email": "support@workskills.in",
+                        "address": "D-54, Siddhi Vinayak, C-Scheme, Jaipur, 302001"
+                },
+                "about_campus_hire_pages": {
+                        "phone": "+91 88 2983 3957",
+                        "email": "support@workskills.live",
+                        "address": "Patel Marg, Mansarovar, Jaipur"
+                },
+                "discrepancy_warning": "Different public pages currently display different contact details."
+        },
+        "admission_process": [
+                "Request callback and share job description",
+                "Get a shortlist in 48 hours",
+                "Interview and work sample",
+                "Offer and onboard in 3-5 days"
+        ],
+        "recruiter_claims": {
+                "shortlist_turnaround": "48 hours",
+                "time_to_hire": "3-5 days"
+        },
+        "about": {
+                "origin_story": "Started in Jaipur with the idea that learning should feel like real work.",
+                "founders": "IIT Kharagpur alumni",
+                "campus_model": "Offline campus, small-batch classes, daily practice, mentor support",
+                "session_format": "2-3 hour evening sessions",
+                "mission_statement": "Bridge the gap between education and employment with accountability."
+        },
+        "campus": {
+                "location": "Jaipur",
+                "features": [
+                        "Offline small-batch classes",
+                        "Evening learning",
+                        "Live projects",
+                        "Mentor desk",
+                        "AI practice",
+                        "Share-and-review sessions",
+                        "Career preparation blocks",
+                        "Resume/profile work",
+                        "Mock interviews",
+                        "Teamwork spaces",
+                        "Quiet study areas",
+                        "Industry tools"
+                ],
+                "typical_learning_flow": [
+                        "Learn a tool or concept",
+                        "Apply it to live projects",
+                        "Ask mentors for help",
+                        "Practise using AI",
+                        "Demonstrate work and receive feedback",
+                        "Work on resume/profile and interviews"
+                ],
+                "typical_completion_time": "12-16 weeks, with some learners placed during that period"
+        },
+        "values": [
+                {
+                        "name": "Care about our team",
+                        "theme": "support"
+                },
+                {
+                        "name": "Be excellent to each other",
+                        "theme": "direct feedback"
+                },
+                {
+                        "name": "Pride in what we do",
+                        "theme": "quality"
+                },
+                {
+                        "name": "Students first, always",
+                        "theme": "learner-first decisions"
+                },
+                {
+                        "name": "Do the impossible",
+                        "theme": "experimentation"
+                },
+                {
+                        "name": "Sweat the small stuff",
+                        "theme": "attention to detail"
+                }
+        ],
+        "reviews": {
+                "rating": 4.7,
+                "count": 3248,
+                "examples": [
+                        {
+                                "name": "Ritika S.",
+                                "verified": true,
+                                "summary": "Mock interviews and weekly accountability helped with a first job interview."
+                        },
+                        {
+                                "name": "Arjun K.",
+                                "verified": true,
+                                "summary": "Praises teaching and content quality; mentions live sessions and recordings."
+                        },
+                        {
+                                "name": "Mahesh M.",
+                                "verified": true,
+                                "summary": "Says live projects helped with an interview."
+                        },
+                        {
+                                "name": "Neha P.",
+                                "verified": true,
+                                "summary": "Says content is strong; requested weekend-only batches; recordings shared quickly."
+                        },
+                        {
+                                "name": "Sagar G.",
+                                "verified": true,
+                                "summary": "States 60K was paid; describes the program as placement-focused and valuable."
+                        },
+                        {
+                                "name": "Vikram K.",
+                                "verified": true,
+                                "summary": "Says he received a TCS offer of 4.5 LPA."
+                        }
+                ]
+        },
+        "career_path": {
+                "learn": "Students learn through lessons, practical exercises, mentor guidance and projects.",
+                "intern": "Students complete an internship or in-built startup internship after training.",
+                "get_placed": "Career assistance including interview preparation, referrals, profile support and placement assistance."
+        },
+        "identity": {
+                "primary_positioning": "India's #1 Platform for IIT Certified Programs",
+                "tagline_journey": "Learn > Intern > Get Placed",
+                "description": "Training and career platform focused on practical learning, internships, live projects, IIT certifications, mentorship and job assistance.",
+                "founders_background": "IIT Kharagpur alumni"
+        },
+        "stats": {
+                "students_placed": "2,000+",
+                "placement_assistance": "100%",
+                "hiring_companies": "500+",
+                "avg_package": "₹12.4 LPA"
+        },
+        "certifying_institutes": [
+                "IIT Bombay",
+                "IIT Patna",
+                "IIT Guwahati"
+        ],
+        "what_students_get": [
+                "IIT certification",
+                "Live projects",
+                "In-built startup internship",
+                "Freelancing assistance",
+                "100% job assistance",
+                "Placement support",
+                "500+ hiring companies",
+                "Industry mentorship",
+                "Guaranteed internships",
+                "Mock interviews",
+                "Real portfolio projects",
+                "Career support",
+                "Interview preparation",
+                "Referrals"
+        ]
+};
+
+    // ── Knowledge Base Loader ────────────────────────────────────
+    async function loadKB() {
+        if (kb) return kb;
+        kb = HARDCODED_KB;
+        return kb;
+    }
+
+    // ── Context Resolution ───────────────────────────────────────
+    function resolveContext(message) {
+        const lower = message.toLowerCase().trim();
+        if (selectedCourseId && /(it|this|the course|that|this one|ithu|adhu|that course|this course)/.test(lower)) {
+            return selectedCourseId;
+        }
+        return null;
+    }
+
+    // ── Intent Detection ─────────────────────────────────────────
+    function detectIntent(message) {
+        const lower = message.toLowerCase().trim();
+        const contextCourseId = resolveContext(message);
+
+        if (kb && kb.courses_full) {
+            for (const c of kb.courses_full) {
+                const shortLower = c.short_name.toLowerCase();
+                const nameLower = c.name.toLowerCase();
+                if (lower.includes(shortLower) || lower.includes(nameLower)) {
+                    if (/(fee|cost|price|evlo)/.test(lower)) return { type: "fees", courseId: c.id };
+                    if (/(apply|admission|enroll|join|register|apply panna|join panna)/.test(lower)) return { type: "admission", courseId: c.id };
+                    if (/(curriculum|syllabus|module|topics|enna teach)/.test(lower)) return { type: "curriculum", courseId: c.id };
+                    if (/(skill|learn|taught|enna kathukalam)/.test(lower)) return { type: "skills", courseId: c.id };
+                    if (/(project|portfolio)/.test(lower)) return { type: "projects", courseId: c.id };
+                    if (/(certif|certificate)/.test(lower)) return { type: "certification", courseId: c.id };
+                    if (/(eligible|eligibility|can i join|enna paakalaam)/.test(lower)) return { type: "eligibility", courseId: c.id };
+                    if (/(mentor|instructor|teacher|yaar teach)/.test(lower)) return { type: "mentors", courseId: c.id };
+                    return { type: "course_direct", courseId: c.id };
+                }
+            }
+        }
+
+        if (contextCourseId) {
+            if (/(fee|cost|price|how much|evlo)/.test(lower)) return { type: "fees", courseId: contextCourseId };
+            if (/(apply|admission|enroll|join)/.test(lower)) return { type: "admission", courseId: contextCourseId };
+            if (/(curriculum|syllabus|module|topics)/.test(lower)) return { type: "curriculum", courseId: contextCourseId };
+            if (/(skill|learn|taught)/.test(lower)) return { type: "skills", courseId: contextCourseId };
+            if (/(project|portfolio)/.test(lower)) return { type: "projects", courseId: contextCourseId };
+            if (/(certif)/.test(lower)) return { type: "certification", courseId: contextCourseId };
+            return { type: "course_direct", courseId: contextCourseId };
+        }
+
+        const intentOrder = [
+            "courses", "curriculum", "projects", "certification",
+            "fees", "eligibility", "admission", "placement",
+            "mentors", "tools", "campus", "reviews", "values", "about", "contact", "faq",
+        ];
+
+        for (const intent of intentOrder) {
+            for (const kw of INTENTS[intent]) {
+                if (lower.includes(kw)) {
+                    return { type: intent };
+                }
+            }
+        }
+
+        return { type: "general" };
+    }
+
+    // ── DOM Helpers ──────────────────────────────────────────────
+    function scrollToBottom() {
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+
+    function addUserMessage(text) {
+        const w = document.createElement("div");
+        w.className = "chat-message user-message";
+        const b = document.createElement("div");
+        b.className = "message-bubble user-bubble";
+        b.textContent = text;
+        w.appendChild(b);
+        chatMessages.appendChild(w);
+        scrollToBottom();
+    }
+
+    function addBotText(text) {
+        const w = document.createElement("div");
+        w.className = "chat-message bot-message";
+        const b = document.createElement("div");
+        b.className = "message-bubble bot-bubble";
+        b.textContent = text;
+        w.appendChild(b);
+        chatMessages.appendChild(w);
+        scrollToBottom();
+        return b;
+    }
+
+    function addBotHTML(html) {
+        const w = document.createElement("div");
+        w.className = "chat-message bot-message";
+        const b = document.createElement("div");
+        b.className = "bot-block";
+        b.innerHTML = html;
+        w.appendChild(b);
+        chatMessages.appendChild(w);
+        scrollToBottom();
+        return b;
+    }
+
+    function addBotBlock() {
+        const w = document.createElement("div");
+        w.className = "chat-message bot-message";
+        const b = document.createElement("div");
+        b.className = "bot-block";
+        w.appendChild(b);
+        chatMessages.appendChild(w);
+        scrollToBottom();
+        return b;
+    }
+
+    function addTyping() {
+        const w = document.createElement("div");
+        w.className = "chat-message bot-message";
+        w.id = "typingIndicator";
+        const d = document.createElement("div");
+        d.className = "typing-indicator";
+        d.innerHTML = '<div class="typing-dot"></div><div class="typing-dot"></div><div class="typing-dot"></div>';
+        w.appendChild(d);
+        chatMessages.appendChild(w);
+        scrollToBottom();
+    }
+
+    function removeTyping() {
+        const el = document.getElementById("typingIndicator");
+        if (el) el.remove();
+    }
+
+    // ── Button Renderers ─────────────────────────────────────────
+    function makeBtnGrid(parent, className) {
+        const g = document.createElement("div");
+        g.className = className;
+        parent.appendChild(g);
+        return g;
+    }
+
+    function addBtn(grid, label, onClick, cls) {
+        const b = document.createElement("button");
+        b.className = cls || "chat-action-btn";
+        b.textContent = label;
+        b.addEventListener("click", onClick);
+        grid.appendChild(b);
+        return b;
+    }
+
+    function addBtnGroupLabel(parent, text) {
+        const l = document.createElement("p");
+        l.className = "btn-group-label";
+        l.textContent = text;
+        parent.appendChild(l);
+        return l;
+    }
+
+    function addBackBtn(parent, label, onClick) {
+        const b = document.createElement("button");
+        b.className = "chat-back-btn";
+        b.textContent = label || "← Back";
+        b.addEventListener("click", onClick);
+        parent.appendChild(b);
+        return b;
+    }
+
+    function addMainMenuBtn(parent) {
+        const b = document.createElement("button");
+        b.className = "chat-back-btn";
+        b.textContent = "🏠 Main Menu";
+        b.addEventListener("click", () => { navStack = []; showWelcome(); });
+        parent.appendChild(b);
+        return b;
+    }
+
+    function pushNav(fn) {
+        navStack.push(fn);
+    }
+
+    function popNav() {
+        if (navStack.length > 1) {
+            navStack.pop();
+            navStack[navStack.length - 1]();
+        } else if (navStack.length === 1) {
+            navStack = [];
+            showWelcome();
+        }
+    }
+
+    // ── Welcome Flow ─────────────────────────────────────────────
+    function showWelcome() {
+        const block = addBotBlock();
+        const label = document.createElement("p");
+        label.className = "bot-block-label";
+        label.textContent = "How can I help you today?";
+        block.appendChild(label);
+
+        const grid = makeBtnGrid(block, "chat-btn-grid");
+        addBtn(grid, "📚 Browse Courses", () => showCourses(), "chat-action-btn primary");
+        addBtn(grid, "📝 How to Join", () => showAdmission(), "chat-action-btn");
+        addBtn(grid, "💰 View Fees", () => showFeesOverview(), "chat-action-btn");
+        addBtn(grid, "📞 Contact Us", () => showContact(), "chat-action-btn");
+        addBtn(grid, "🎯 Career & Placement", () => showPlacement(), "chat-action-btn");
+        addBtn(grid, "❓ FAQs", () => showFAQs(), "chat-action-btn");
+
+        scrollToBottom();
+    }
+
+    // ── Courses ──────────────────────────────────────────────────
+    async function showCourses() {
+        addTyping();
+        const data = await loadKB();
+        removeTyping();
+        if (!data || !data.courses_full) {
+            addBotText("Sorry, I couldn't load course information right now. Please try again in a moment.");
+            return;
+        }
+
+        const block = addBotBlock();
+        const p = document.createElement("p");
+        p.className = "bot-block-label";
+        p.innerHTML = `<strong>${opener()} Here are the courses currently available at Workskills.</strong><br>Choose a course to explore its details.`;
+        block.appendChild(p);
+
+        const grid = makeBtnGrid(block, "chat-btn-grid courses-grid");
+        data.courses_full.forEach(c => {
+            const btn = document.createElement("button");
+            btn.className = "chat-course-btn";
+            btn.innerHTML = `<span class="course-btn-title">${c.short_name}</span><span class="course-btn-sub">${c.institute} · ₹${c.fee.toLocaleString("en-IN")}</span>`;
+            btn.addEventListener("click", () => { selectedCourseId = c.id; showCourseDetail(c.id); });
+            grid.appendChild(btn);
+        });
+
+        const nav = makeBtnGrid(block, "chat-btn-grid nav-grid");
+        addBtn(nav, "💰 Fees Overview", () => showFeesOverview(), "chat-action-btn");
+        addBtn(nav, "📞 Contact", () => showContact(), "chat-action-btn");
+
+        addMainMenuBtn(block);
+        pushNav(() => showCourses());
+        scrollToBottom();
+    }
+
+    // ── Course Detail ────────────────────────────────────────────
+    async function showCourseDetail(courseId) {
+        addTyping();
+        const data = await loadKB();
+        removeTyping();
+        if (!data) { addBotText("Sorry, something went wrong. Please try again."); return; }
+
+        const course = data.courses_full.find(c => c.id === courseId);
+        if (!course) { addBotText("I couldn't find that course. Please choose from the list below."); return; }
+
+        selectedCourseId = courseId;
+        const analytics = data.analytics_program;
+        const isDataAnalytics = courseId === "data-analytics";
+        const detail = isDataAnalytics ? analytics : null;
+
+        // Build the entire block using DOM methods (no innerHTML overwrite)
+        const wrapper = document.createElement("div");
+        wrapper.className = "chat-message bot-message";
+
+        const block = document.createElement("div");
+        block.className = "bot-block";
+
+        // ── Overview Card ────────────────────────────────────────
+        const card = document.createElement("div");
+        card.className = "course-overview-card";
+
+        const header = document.createElement("div");
+        header.className = "course-ov-header";
+        header.innerHTML = `<span class="course-ov-badge">${course.positioning}</span><span class="course-ov-inst">${course.institute}</span>`;
+        card.appendChild(header);
+
+        const name = document.createElement("h4");
+        name.className = "course-ov-name";
+        name.textContent = course.name;
+        card.appendChild(name);
+
+        const desc = document.createElement("p");
+        desc.className = "course-ov-desc";
+        desc.textContent = detail && detail.positioning
+            ? `${detail.positioning} — comprehensive program with guaranteed internship and placement support.`
+            : "IIT-certified program designed to build industry-ready skills with hands-on projects and placement assistance.";
+        card.appendChild(desc);
+
+        const meta = document.createElement("div");
+        meta.className = "course-ov-meta";
+        meta.innerHTML = `
+            <div class="meta-chip"><span class="meta-chip-label">Duration</span><span class="meta-chip-val">${detail ? detail.duration.industrial_training_weeks + " weeks training + " + detail.duration.internship_live_project_weeks + " weeks internship" : "12–16 weeks"}</span></div>
+            <div class="meta-chip"><span class="meta-chip-label">Fee</span><span class="meta-chip-val">₹${course.fee.toLocaleString("en-IN")}</span></div>
+            ${course.emi && course.emi.installments ? `<div class="meta-chip"><span class="meta-chip-label">EMI</span><span class="meta-chip-val">₹${(course.emi.amount_inr || course.emi.amount || 0).toLocaleString("en-IN")} × ${course.emi.installments}</span></div>` : ""}
+        `;
+        card.appendChild(meta);
+        block.appendChild(card);
+
+        // ── Explore Group ────────────────────────────────────────
+        const exploreLabel = document.createElement("p");
+        exploreLabel.className = "btn-group-label";
+        exploreLabel.textContent = "Explore";
+        block.appendChild(exploreLabel);
+
+        const exploreGrid = makeBtnGrid(block, "chat-btn-grid action-grid");
+        if (isDataAnalytics) {
+            addBtn(exploreGrid, "📚 Curriculum", () => showCurriculum(courseId), "chat-action-btn");
+        }
+        addBtn(exploreGrid, "🎯 Skills", () => showSkills(courseId), "chat-action-btn");
+        addBtn(exploreGrid, "🚀 Projects", () => showProjects(courseId), "chat-action-btn");
+        addBtn(exploreGrid, "🎓 Certification", () => showCertification(courseId), "chat-action-btn");
+
+        // ── Join Group ───────────────────────────────────────────
+        const joinLabel = document.createElement("p");
+        joinLabel.className = "btn-group-label";
+        joinLabel.textContent = "Join";
+        block.appendChild(joinLabel);
+
+        const joinGrid = makeBtnGrid(block, "chat-btn-grid action-grid");
+        addBtn(joinGrid, "💰 Fees & EMI", () => showFeesDetail(courseId), "chat-action-btn");
+        addBtn(joinGrid, "✅ Eligibility", () => showEligibility(courseId), "chat-action-btn");
+        addBtn(joinGrid, "📝 Admission", () => showAdmissionForCourse(courseId), "chat-action-btn");
+        addBtn(joinGrid, "🚀 Enroll Now", () => showEnroll(courseId), "chat-action-btn primary");
+
+        // ── Help Group ───────────────────────────────────────────
+        const helpLabel = document.createElement("p");
+        helpLabel.className = "btn-group-label";
+        helpLabel.textContent = "Need Help?";
+        block.appendChild(helpLabel);
+
+        const helpGrid = makeBtnGrid(block, "chat-btn-grid action-grid");
+        addBtn(helpGrid, "📞 Contact Support", () => showContact(), "chat-action-btn");
+        addBtn(helpGrid, "📚 All Courses", () => showCourses(), "chat-action-btn small");
+
+        // ── Main Menu ────────────────────────────────────────────
+        addMainMenuBtn(block);
+
+        wrapper.appendChild(block);
+        chatMessages.appendChild(wrapper);
+        scrollToBottom();
+
+        pushNav(() => showCourseDetail(courseId));
+    }
+
+    // ── Curriculum ───────────────────────────────────────────────
+    async function showCurriculum(courseId) {
+        addTyping();
+        const data = await loadKB();
+        removeTyping();
+        if (!data) { addBotText("Sorry, something went wrong."); return; }
+
+        const modules = data.analytics_program.curriculum;
+        const course = data.courses_full.find(c => c.id === courseId);
+
+        const block = addBotBlock();
+        const p = document.createElement("p");
+        p.className = "bot-block-label";
+        p.innerHTML = `<strong>${opener()} Here's the curriculum for ${course ? course.short_name : "Data Analytics"}.</strong><br>Select a module to see what you'll learn inside it.`;
+        block.appendChild(p);
+
+        const grid = makeBtnGrid(block, "module-btn-grid");
+        modules.forEach((mod, idx) => {
+            const btn = document.createElement("button");
+            btn.className = "module-btn";
+            btn.innerHTML = `<span class="module-num">${idx + 1}</span><span class="module-info"><span class="module-name">${mod.name}</span><span class="module-count">${mod.lesson_count} lessons</span></span>`;
+            btn.addEventListener("click", () => showModuleDetail(courseId, idx));
+            grid.appendChild(btn);
+        });
+
+        addBackBtn(block, `← Back to ${course ? course.short_name : "course"}`, () => showCourseDetail(courseId));
+        pushNav(() => showCurriculum(courseId));
+        scrollToBottom();
+    }
+
+    async function showModuleDetail(courseId, moduleIndex) {
+        addTyping();
+        const data = await loadKB();
+        removeTyping();
+        if (!data) return;
+
+        const mod = data.analytics_program.curriculum[moduleIndex];
+        const course = data.courses_full.find(c => c.id === courseId);
+        const totalModules = data.analytics_program.curriculum.length;
+
+        const block = addBotBlock();
+        const p = document.createElement("p");
+        p.className = "bot-block-label";
+        p.innerHTML = `<strong>Module ${moduleIndex + 1} of ${totalModules} — ${mod.name}</strong>`;
+        block.appendChild(p);
+
+        const intro = document.createElement("p");
+        intro.className = "bot-block-intro";
+        intro.textContent = `In this module, you'll learn ${mod.lesson_count} key topics. Here's the breakdown:`;
+        block.appendChild(intro);
+
+        const list = document.createElement("div");
+        list.className = "lesson-list";
+        mod.lessons.forEach((lesson, i) => {
+            const item = document.createElement("div");
+            item.className = "lesson-item";
+            item.innerHTML = `<span class="lesson-num">${i + 1}</span><span class="lesson-text">${lesson}</span>`;
+            list.appendChild(item);
+        });
+        block.appendChild(list);
+
+        const nav = makeBtnGrid(block, "chat-btn-grid nav-grid");
+        if (moduleIndex < totalModules - 1) {
+            addBtn(nav, `Next: Module ${moduleIndex + 2}`, () => showModuleDetail(courseId, moduleIndex + 1), "chat-action-btn");
+        }
+        addBtn(nav, "📚 All Modules", () => showCurriculum(courseId), "chat-action-btn");
+        addBackBtn(block, `← Back to ${course ? course.short_name : "course"}`, () => showCourseDetail(courseId));
+        pushNav(() => showModuleDetail(courseId, moduleIndex));
+        scrollToBottom();
+    }
+
+    // ── Skills ───────────────────────────────────────────────────
+    async function showSkills(courseId) {
+        addTyping();
+        const data = await loadKB();
+        removeTyping();
+        if (!data) return;
+
+        const course = data.courses_full.find(c => c.id === courseId);
+        const tools = data.tools;
+
+        const block = addBotBlock();
+        const p = document.createElement("p");
+        p.className = "bot-block-label";
+        p.innerHTML = `<strong>${opener()} Here are the skills and tools you'll master in ${course ? course.short_name : "this course"}.</strong>`;
+        block.appendChild(p);
+
+        if (tools && tools.categories) {
+            Object.entries(tools.categories).forEach(([cat, list]) => {
+                const catName = cat.replace(/_/g, " ").replace(/\b\w/g, l => l.toUpperCase());
+                const catP = document.createElement("p");
+                catP.className = "tool-cat-name";
+                catP.textContent = catName;
+                block.appendChild(catP);
+
+                const tags = document.createElement("div");
+                tags.className = "skill-tags";
+                list.forEach(tool => {
+                    const tag = document.createElement("span");
+                    tag.className = "skill-tag";
+                    tag.textContent = tool;
+                    tags.appendChild(tag);
+                });
+                block.appendChild(tags);
+            });
+        }
+
+        addBackBtn(block, `← Back to ${course ? course.short_name : "course"}`, () => showCourseDetail(courseId));
+        pushNav(() => showSkills(courseId));
+        scrollToBottom();
+    }
+
+    // ── Projects ─────────────────────────────────────────────────
+    async function showProjects(courseId) {
+        addTyping();
+        const data = await loadKB();
+        removeTyping();
+        if (!data) return;
+
+        const course = data.courses_full.find(c => c.id === courseId);
+        const projects = data.live_projects;
+
+        const block = addBotBlock();
+        const p = document.createElement("p");
+        p.className = "bot-block-label";
+        p.innerHTML = `<strong>${opener()} You'll work on ${projects.length} real-world projects${course ? " in " + course.short_name : ""}.</strong><br>Each project is designed to build your portfolio.`;
+        block.appendChild(p);
+
+        const list = document.createElement("div");
+        list.className = "project-list";
+        projects.forEach(proj => {
+            const card = document.createElement("div");
+            card.className = "project-card";
+            card.innerHTML = `
+                <div class="project-title">${proj.title}</div>
+                <div class="project-meta">
+                    ${proj.area ? `<span class="project-tag">${proj.area}</span>` : ""}
+                    ${proj.difficulty ? `<span class="project-diff">${proj.difficulty}</span>` : ""}
+                    ${proj.duration ? `<span class="project-dur">${proj.duration}</span>` : ""}
+                </div>
+                ${proj.guide ? `<div class="project-guide">Guide: ${proj.guide}</div>` : ""}
+            `;
+            list.appendChild(card);
+        });
+        block.appendChild(list);
+
+        addBackBtn(block, `← Back to ${course ? course.short_name : "course"}`, () => showCourseDetail(courseId));
+        pushNav(() => showProjects(courseId));
+        scrollToBottom();
+    }
+
+    // ── Certification ────────────────────────────────────────────
+    async function showCertification(courseId) {
+        addTyping();
+        const data = await loadKB();
+        removeTyping();
+        if (!data) return;
+
+        const course = data.courses_full.find(c => c.id === courseId);
+        const institutes = data.certifying_institutes;
+
+        const block = addBotBlock();
+        const p = document.createElement("p");
+        p.className = "bot-block-label";
+        p.innerHTML = `<strong>${opener()} Here's the certification detail for ${course ? course.short_name : "this course"}.</strong>`;
+        block.appendChild(p);
+
+        const certBox = document.createElement("div");
+        certBox.className = "cert-box";
+        certBox.innerHTML = `
+            <div class="cert-icon">🎓</div>
+            <div class="cert-content">
+                <p class="cert-text">On completion, you receive an <strong>IIT-certified certification</strong> from ${course ? course.institute : "a premier IIT institute"}.</p>
+                <p class="cert-sub">Certifying Institutes: ${institutes.join(", ")}</p>
+                <p class="cert-note">These certifications are recognized by top employers across India.</p>
+            </div>
+        `;
+        block.appendChild(certBox);
+
+        const nav = makeBtnGrid(block, "chat-btn-grid action-grid");
+        addBtn(nav, "🚀 Enroll Now", () => showEnroll(courseId), "chat-action-btn primary");
+        addBtn(nav, "💰 View Fees", () => showFeesDetail(courseId), "chat-action-btn");
+        addBackBtn(block, `← Back to ${course ? course.short_name : "course"}`, () => showCourseDetail(courseId));
+        pushNav(() => showCertification(courseId));
+        scrollToBottom();
+    }
+
+    async function showCertificationOverview() {
+        addTyping();
+        const data = await loadKB();
+        removeTyping();
+        if (!data) { addBotText("Sorry, something went wrong."); return; }
+
+        const institutes = data.certifying_institutes;
+        const whatGet = data.what_students_get;
+
+        const block = addBotBlock();
+        const p = document.createElement("p");
+        p.className = "bot-block-label";
+        p.innerHTML = `<strong>${opener()} All Workskills programs come with IIT-certified certifications.</strong>`;
+        block.appendChild(p);
+
+        const certBox = document.createElement("div");
+        certBox.className = "cert-box";
+        let certHTML = `
+            <div class="cert-icon">🎓</div>
+            <div class="cert-content">
+                <p class="cert-text">You'll receive certifications from <strong>${institutes.join(", ")}</strong> — India's premier institutions.</p>
+        `;
+        if (whatGet && whatGet.length > 0) {
+            certHTML += `<p class="cert-note">You also get: ${whatGet.slice(0, 6).join(" · ")}</p>`;
+        }
+        certHTML += `</div>`;
+        certBox.innerHTML = certHTML;
+        block.appendChild(certBox);
+
+        const nav = makeBtnGrid(block, "chat-btn-grid action-grid");
+        addBtn(nav, "📚 View Courses", () => showCourses(), "chat-action-btn primary");
+        addBtn(nav, "📝 Admission", () => showAdmission(), "chat-action-btn");
+        addBtn(nav, "📞 Contact", () => showContact(), "chat-action-btn");
+
+        addMainMenuBtn(block);
+        pushNav(() => showCertificationOverview());
+        scrollToBottom();
+    }
+
+    // ── Fees Overview ────────────────────────────────────────────
+    async function showFeesOverview() {
+        addTyping();
+        const data = await loadKB();
+        removeTyping();
+        if (!data) { addBotText("Sorry, something went wrong."); return; }
+
+        const block = addBotBlock();
+        const p = document.createElement("p");
+        p.className = "bot-block-label";
+        p.innerHTML = `<strong>${opener()} Here's the fee overview for all Workskills programs.</strong><br>Tap a course for full details.`;
+        block.appendChild(p);
+
+        const list = document.createElement("div");
+        list.className = "fee-list";
+        data.courses_full.forEach(c => {
+            const card = document.createElement("div");
+            card.className = "fee-card";
+            card.innerHTML = `
+                <div class="fee-card-header">
+                    <span class="fee-card-name">${c.short_name}</span>
+                    <span class="fee-card-inst">${c.institute}</span>
+                </div>
+                <div class="fee-card-body">
+                    <span class="fee-card-price">₹${c.fee.toLocaleString("en-IN")}</span>
+                    ${c.emi.installments ? `<span class="fee-card-emi">EMI: ₹${c.emi.amount_inr.toLocaleString("en-IN")} × ${c.emi.installments} months</span>` : ""}
+                </div>
+            `;
+            card.style.cursor = "pointer";
+            card.addEventListener("click", () => { selectedCourseId = c.id; showCourseDetail(c.id); });
+            list.appendChild(card);
+        });
+        block.appendChild(list);
+
+        const note = document.createElement("p");
+        note.className = "fee-note";
+        note.textContent = "All fees are current listed prices subject to change. Contact us for the latest pricing.";
+        block.appendChild(note);
+
+        const nav = makeBtnGrid(block, "chat-btn-grid nav-grid");
+        addBtn(nav, "📝 Admission", () => showAdmission(), "chat-action-btn");
+        addBtn(nav, "📞 Contact", () => showContact(), "chat-action-btn");
+
+        addMainMenuBtn(block);
+        pushNav(() => showFeesOverview());
+        scrollToBottom();
+    }
+
+    async function showFeesDetail(courseId) {
+        addTyping();
+        const data = await loadKB();
+        removeTyping();
+        if (!data) return;
+
+        const course = data.courses_full.find(c => c.id === courseId);
+        if (!course) return;
+
+        const block = addBotBlock();
+        const p = document.createElement("p");
+        p.className = "bot-block-label";
+        p.innerHTML = `<strong>${opener()} Fee details for ${course.short_name}:</strong>`;
+        block.appendChild(p);
+
+        const box = document.createElement("div");
+        box.className = "fee-detail-box";
+        box.innerHTML = `
+            <div class="fee-detail-row">
+                <span class="fee-detail-label">Course Fee</span>
+                <span class="fee-detail-val big">₹${course.fee.toLocaleString("en-IN")}</span>
+            </div>
+            ${course.emi.installments ? `
+            <div class="fee-detail-row">
+                <span class="fee-detail-label">EMI Option</span>
+                <span class="fee-detail-val">₹${(course.emi.amount_inr || 0).toLocaleString("en-IN")} × ${course.emi.installments} months</span>
+            </div>` : ""}
+            <div class="fee-detail-note">Prices are subject to change. Contact us for the latest pricing.</div>
+        `;
+        block.appendChild(box);
+
+        const nav = makeBtnGrid(block, "chat-btn-grid action-grid");
+        addBtn(nav, "📝 Admission Process", () => showAdmissionForCourse(courseId), "chat-action-btn");
+        addBtn(nav, "🚀 Enroll Now", () => showEnroll(courseId), "chat-action-btn primary");
+        addBackBtn(block, `← Back to ${course.short_name}`, () => showCourseDetail(courseId));
+
+        pushNav(() => showFeesDetail(courseId));
+        scrollToBottom();
+    }
+
+    // ── Admission ────────────────────────────────────────────────
+    async function showAdmission() {
+        addTyping();
+        const data = await loadKB();
+        removeTyping();
+        if (!data) { addBotText("Sorry, something went wrong."); return; }
+
+        const steps = data.admission_process;
+        const claims = data.recruiter_claims;
+
+        const block = addBotBlock();
+        const p = document.createElement("p");
+        p.className = "bot-block-label";
+        p.innerHTML = `<strong>${opener()} Here's how the admission process works.</strong>`;
+        block.appendChild(p);
+
+        if (steps && steps.length > 0) {
+            const stepList = document.createElement("div");
+            stepList.className = "step-list";
+            steps.forEach((step, i) => {
+                const item = document.createElement("div");
+                item.className = "step-item";
+                item.innerHTML = `<span class="step-num">${i + 1}</span><span class="step-text">${step}</span>`;
+                stepList.appendChild(item);
+            });
+            block.appendChild(stepList);
+        }
+
+        if (claims) {
+            const info = document.createElement("div");
+            info.className = "admission-info";
+            info.innerHTML = `
+                <div class="admission-stat"><strong>Shortlist turnaround:</strong> ${claims.shortlist_turnaround || "48 hours"}</div>
+                <div class="admission-stat"><strong>Time to hire:</strong> ${claims.time_to_hire || "3–5 days"}</div>
+            `;
+            block.appendChild(info);
+        }
+
+        const nav = makeBtnGrid(block, "chat-btn-grid action-grid");
+        addBtn(nav, "🎓 Check Eligibility", () => showEligibility(), "chat-action-btn");
+        addBtn(nav, "💰 View Fees", () => showFeesOverview(), "chat-action-btn");
+        addBtn(nav, "🚀 Apply Now", () => showApplyNow(), "chat-action-btn primary");
+        addBtn(nav, "📞 Contact Support", () => showContact(), "chat-action-btn");
+
+        addMainMenuBtn(block);
+        pushNav(() => showAdmission());
+        scrollToBottom();
+    }
+
+    async function showAdmissionForCourse(courseId) {
+        addTyping();
+        const data = await loadKB();
+        removeTyping();
+        if (!data) return;
+
+        const course = data.courses_full.find(c => c.id === courseId);
+        const steps = data.admission_process;
+
+        const block = addBotBlock();
+        const p = document.createElement("p");
+        p.className = "bot-block-label";
+        p.innerHTML = `<strong>${opener()} Here's how to apply for ${course ? course.short_name : "this course"}.</strong>`;
+        block.appendChild(p);
+
+        if (steps && steps.length > 0) {
+            const stepList = document.createElement("div");
+            stepList.className = "step-list";
+            steps.forEach((step, i) => {
+                const item = document.createElement("div");
+                item.className = "step-item";
+                item.innerHTML = `<span class="step-num">${i + 1}</span><span class="step-text">${step}</span>`;
+                stepList.appendChild(item);
+            });
+            block.appendChild(stepList);
+        }
+
+        const nav = makeBtnGrid(block, "chat-btn-grid action-grid");
+        addBtn(nav, "🚀 Enroll Now", () => showEnroll(courseId), "chat-action-btn primary");
+        addBtn(nav, "💰 View Fees", () => showFeesDetail(courseId), "chat-action-btn");
+        addBtn(nav, "🎓 Eligibility", () => showEligibility(courseId), "chat-action-btn");
+        addBtn(nav, "📞 Contact", () => showContact(), "chat-action-btn");
+        addBackBtn(block, `← Back to ${course ? course.short_name : "course"}`, () => showCourseDetail(courseId));
+
+        pushNav(() => showAdmissionForCourse(courseId));
+        scrollToBottom();
+    }
+
+    // ── Eligibility ──────────────────────────────────────────────
+    async function showEligibility(courseId) {
+        addTyping();
+        const data = await loadKB();
+        removeTyping();
+        if (!data) return;
+
+        const elig = data.analytics_program.eligibility;
+
+        const block = addBotBlock();
+        const p = document.createElement("p");
+        p.className = "bot-block-label";
+        p.innerHTML = `<strong>${opener()} Here's who can join the program.</strong>`;
+        block.appendChild(p);
+
+        if (elig) {
+            const box = document.createElement("div");
+            box.className = "eligibility-box";
+
+            if (elig.degrees) {
+                box.innerHTML += `<div class="elig-section"><strong>Accepted Degrees:</strong> ${elig.degrees.join(", ")}</div>`;
+            }
+
+            if (elig.audiences && elig.audiences.length > 0) {
+                const audList = document.createElement("div");
+                audList.className = "audience-list";
+                elig.audiences.forEach(a => {
+                    const item = document.createElement("div");
+                    item.className = "audience-item";
+                    item.innerHTML = `<span class="audience-type">${a.type}</span><span class="audience-detail">${a.detail}</span>`;
+                    audList.appendChild(item);
+                });
+                box.appendChild(audList);
+            }
+            block.appendChild(box);
+        }
+
+        const nav = makeBtnGrid(block, "chat-btn-grid action-grid");
+        if (courseId) {
+            addBtn(nav, "📝 Admission Process", () => showAdmissionForCourse(courseId), "chat-action-btn");
+            addBtn(nav, "💰 View Fees", () => showFeesDetail(courseId), "chat-action-btn");
+            addBtn(nav, "🚀 Apply Now", () => showEnroll(courseId), "chat-action-btn primary");
+            addBackBtn(block, `← Back to course`, () => showCourseDetail(courseId));
+        } else {
+            addBtn(nav, "📝 Admission Process", () => showAdmission(), "chat-action-btn");
+            addBtn(nav, "💰 View Fees", () => showFeesOverview(), "chat-action-btn");
+            addBtn(nav, "🚀 Apply Now", () => showApplyNow(), "chat-action-btn primary");
+            addBtn(nav, "📞 Contact", () => showContact(), "chat-action-btn");
+            addMainMenuBtn(block);
+        }
+
+        pushNav(() => showEligibility(courseId));
+        scrollToBottom();
+    }
+
+    // ── Enrollment / Apply ───────────────────────────────────────
+    async function showEnroll(courseId) {
+        addTyping();
+        const data = await loadKB();
+        removeTyping();
+        if (!data) return;
+
+        const course = data.courses_full.find(c => c.id === courseId);
+        const pricing = data.analytics_program.pricing;
+
+        const block = addBotBlock();
+        const p = document.createElement("p");
+        p.className = "bot-block-label";
+        p.innerHTML = `<strong>${opener()} Ready to enroll in ${course ? course.short_name : "this course"}?</strong>`;
+        block.appendChild(p);
+
+        const box = document.createElement("div");
+        box.className = "enroll-box";
+        box.innerHTML = `
+            <div class="enroll-row"><span class="enroll-label">Course Fee:</span><span class="enroll-val">₹${course ? course.fee.toLocaleString("en-IN") : ""}</span></div>
+            ${course && course.emi.installments ? `<div class="enroll-row"><span class="enroll-label">EMI:</span><span class="enroll-val">₹${(course.emi.amount_inr || 0).toLocaleString("en-IN")} × ${course.emi.installments} months</span></div>` : ""}
+            ${pricing && pricing.enrolment_amount_inr ? `<div class="enroll-row"><span class="enroll-label">Enrolment Amount:</span><span class="enroll-val">₹${pricing.enrolment_amount_inr.toLocaleString("en-IN")} + GST</span></div>` : ""}
+            <div class="enroll-cta">
+                <p>To enroll, visit <strong>program.workskills.in</strong> or call us at <strong>+91 8949655441</strong>.</p>
+                <p class="enroll-note">You can also request a callback and our team will guide you.</p>
+            </div>
+        `;
+        block.appendChild(box);
+
+        const nav = makeBtnGrid(block, "chat-btn-grid action-grid");
+        addBtn(nav, "📞 Request Callback", () => showContact(), "chat-action-btn primary");
+        addBtn(nav, "💰 Fees & EMI", () => showFeesDetail(courseId), "chat-action-btn");
+        addBtn(nav, "📝 Admission Process", () => showAdmissionForCourse(courseId), "chat-action-btn");
+        addBackBtn(block, `← Back to ${course ? course.short_name : "course"}`, () => showCourseDetail(courseId));
+
+        pushNav(() => showEnroll(courseId));
+        scrollToBottom();
+    }
+
+    async function showApplyNow() {
+        addTyping();
+        const data = await loadKB();
+        removeTyping();
+        if (!data) return;
+
+        const block = addBotBlock();
+        const p = document.createElement("p");
+        p.className = "bot-block-label";
+        p.innerHTML = `<strong>${opener()} Here's how to start your application.</strong>`;
+        block.appendChild(p);
+
+        const box = document.createElement("div");
+        box.className = "apply-box";
+        box.innerHTML = `
+            <p>Visit <strong>program.workskills.in</strong> to start your application.</p>
+            <p>Or call us at <strong>+91 8949655441</strong> — our team will guide you through every step.</p>
+            <p class="apply-note">You can also click "Request Callback" below and we'll reach out to you.</p>
+        `;
+        block.appendChild(box);
+
+        const nav = makeBtnGrid(block, "chat-btn-grid action-grid");
+        addBtn(nav, "📞 Request Callback", () => showContact(), "chat-action-btn primary");
+        addBtn(nav, "🎓 Check Eligibility", () => showEligibility(), "chat-action-btn");
+        addBtn(nav, "📚 View Courses", () => showCourses(), "chat-action-btn");
+
+        addMainMenuBtn(block);
+        pushNav(() => showApplyNow());
+        scrollToBottom();
+    }
+
+    // ── Contact ──────────────────────────────────────────────────
+    async function showContact() {
+        addTyping();
+        const data = await loadKB();
+        removeTyping();
+        if (!data) { addBotText("Sorry, something went wrong."); return; }
+
+        const contact = data.contact;
+        const homepage = contact.homepage || {};
+        const about = contact.about_campus_hire_pages || {};
+
+        const block = addBotBlock();
+        const p = document.createElement("p");
+        p.className = "bot-block-label";
+        p.innerHTML = `<strong>${opener()} Here's how you can reach the Workskills team.</strong><br>Choose the method you'd prefer:`;
+        block.appendChild(p);
+
+        const box = document.createElement("div");
+        box.className = "contact-box";
+
+        let html = "";
+        if (homepage.phone || about.phone) {
+            html += `<div class="contact-row"><span class="contact-icon">📞</span><div class="contact-info">`;
+            if (homepage.phone) html += `<div class="contact-val">${homepage.phone}</div>`;
+            if (about.phone && about.phone !== homepage.phone) html += `<div class="contact-val small">${about.phone} (Campus)</div>`;
+            html += `</div></div>`;
+        }
+        if (homepage.email || about.email) {
+            html += `<div class="contact-row"><span class="contact-icon">✉️</span><div class="contact-info">`;
+            if (homepage.email) html += `<div class="contact-val">${homepage.email}</div>`;
+            if (about.email && about.email !== homepage.email) html += `<div class="contact-val small">${about.email} (Campus)</div>`;
+            html += `</div></div>`;
+        }
+        if (homepage.address || about.address) {
+            html += `<div class="contact-row"><span class="contact-icon">📍</span><div class="contact-info">`;
+            if (homepage.address) html += `<div class="contact-val">${homepage.address}</div>`;
+            if (about.address && about.address !== homepage.address) html += `<div class="contact-val small">${about.address} (Campus)</div>`;
+            html += `</div></div>`;
+        }
+
+        if (contact.discrepancy_warning) {
+            html += `<div class="contact-note">Note: ${contact.discrepancy_warning}</div>`;
+        }
+
+        box.innerHTML = html;
+        block.appendChild(box);
+
+        const nav = makeBtnGrid(block, "chat-btn-grid nav-grid");
+        addBtn(nav, "📚 Courses", () => showCourses(), "chat-action-btn");
+        addBtn(nav, "📝 Admission", () => showAdmission(), "chat-action-btn");
+
+        addMainMenuBtn(block);
+        pushNav(() => showContact());
+        scrollToBottom();
+    }
+
+    // ── Placement / Career ───────────────────────────────────────
+    async function showPlacement() {
+        addTyping();
+        const data = await loadKB();
+        removeTyping();
+        if (!data) return;
+
+        const stats = data.stats;
+        const career = data.career_path;
+        const whatGet = data.what_students_get;
+
+        const block = addBotBlock();
+        const p = document.createElement("p");
+        p.className = "bot-block-label";
+        p.innerHTML = `<strong>${opener()} Here's what happens after your training.</strong>`;
+        block.appendChild(p);
+
+        const box = document.createElement("div");
+        box.className = "placement-box";
+
+        let html = `<div class="placement-stats">`;
+        html += `<div class="p-stat"><span class="p-stat-num">${stats.students_placed}</span><span class="p-stat-label">Students Placed</span></div>`;
+        html += `<div class="p-stat"><span class="p-stat-num">${stats.placement_assistance}</span><span class="p-stat-label">Placement Assistance</span></div>`;
+        html += `<div class="p-stat"><span class="p-stat-num">${stats.hiring_companies}</span><span class="p-stat-label">Hiring Companies</span></div>`;
+        html += `<div class="p-stat"><span class="p-stat-num">${stats.avg_package}</span><span class="p-stat-label">Avg Package</span></div>`;
+        html += `</div>`;
+
+        if (career) {
+            html += `<div class="placement-section"><strong>Our Model:</strong> ${career.learn || ""} → ${career.intern || ""} → ${career.get_placed || ""}</div>`;
+        }
+
+        if (whatGet && whatGet.length > 0) {
+            html += `<div class="placement-section"><strong>What You Get:</strong></div>`;
+            html += `<div class="what-get-tags">`;
+            whatGet.forEach(item => {
+                html += `<span class="what-get-tag">${item}</span>`;
+            });
+            html += `</div>`;
+        }
+
+        html += `<div class="placement-note">All placement numbers are Workskills website claims, not independently verified.</div>`;
+
+        box.innerHTML = html;
+        block.appendChild(box);
+
+        const nav = makeBtnGrid(block, "chat-btn-grid action-grid");
+        addBtn(nav, "📚 View Courses", () => showCourses(), "chat-action-btn primary");
+        addBtn(nav, "💰 View Fees", () => showFeesOverview(), "chat-action-btn");
+        addBtn(nav, "📞 Contact", () => showContact(), "chat-action-btn");
+
+        addMainMenuBtn(block);
+        pushNav(() => showPlacement());
+        scrollToBottom();
+    }
+
+    // ── Mentors ──────────────────────────────────────────────────
+    async function showMentors() {
+        addTyping();
+        const data = await loadKB();
+        removeTyping();
+        if (!data) return;
+
+        const guides = data.project_guides;
+
+        const block = addBotBlock();
+        const p = document.createElement("p");
+        p.className = "bot-block-label";
+        p.innerHTML = `<strong>${opener()} Here are the project guides and mentors.</strong>`;
+        block.appendChild(p);
+
+        if (guides && guides.length > 0) {
+            const list = document.createElement("div");
+            list.className = "mentor-list";
+            guides.forEach(g => {
+                const card = document.createElement("div");
+                card.className = "mentor-card";
+                card.innerHTML = `
+                    <div class="mentor-avatar">${g.name.charAt(0)}</div>
+                    <div class="mentor-info">
+                        <div class="mentor-name">${g.name}</div>
+                        <div class="mentor-role">${g.role}</div>
+                        <div class="mentor-projects">Projects: ${g.projects.join(", ")}</div>
+                    </div>
+                `;
+                list.appendChild(card);
+            });
+            block.appendChild(list);
+        } else {
+            addBotText("Mentor details will be shared during the program enrollment.");
+        }
+
+        addBackBtn(block, "← Back", () => navStack.length > 1 ? popNav() : showGlobalNav());
+        pushNav(() => showMentors());
+        scrollToBottom();
+    }
+
+    // ── Tools ────────────────────────────────────────────────────
+    async function showAllSkills() {
+        addTyping();
+        const data = await loadKB();
+        removeTyping();
+        if (!data) return;
+
+        const tools = data.tools;
+
+        const block = addBotBlock();
+        const p = document.createElement("p");
+        p.className = "bot-block-label";
+        p.innerHTML = `<strong>${opener()} You'll master ${tools ? tools.advertised_total || "50+" : ""}+ tools and technologies.</strong>`;
+        block.appendChild(p);
+
+        if (tools && tools.categories) {
+            Object.entries(tools.categories).forEach(([cat, list]) => {
+                const catName = cat.replace(/_/g, " ").replace(/\b\w/g, l => l.toUpperCase());
+                const catP = document.createElement("p");
+                catP.className = "tool-cat-name";
+                catP.textContent = catName;
+                block.appendChild(catP);
+
+                const tags = document.createElement("div");
+                tags.className = "skill-tags";
+                list.forEach(tool => {
+                    const tag = document.createElement("span");
+                    tag.className = "skill-tag";
+                    tag.textContent = tool;
+                    tags.appendChild(tag);
+                });
+                block.appendChild(tags);
+            });
+        }
+
+        addBackBtn(block, "← Back", () => navStack.length > 1 ? popNav() : showGlobalNav());
+        pushNav(() => showAllSkills());
+        scrollToBottom();
+    }
+
+    // ── Projects (all) ──────────────────────────────────────────
+    async function showAllProjects() {
+        addTyping();
+        const data = await loadKB();
+        removeTyping();
+        if (!data) return;
+
+        const projects = data.live_projects;
+
+        const block = addBotBlock();
+        const p = document.createElement("p");
+        p.className = "bot-block-label";
+        p.innerHTML = `<strong>${opener()} Here are all the live projects you'll work on.</strong>`;
+        block.appendChild(p);
+
+        const list = document.createElement("div");
+        list.className = "project-list";
+        projects.forEach(proj => {
+            const card = document.createElement("div");
+            card.className = "project-card";
+            card.innerHTML = `
+                <div class="project-title">${proj.title}</div>
+                <div class="project-meta">
+                    ${proj.area ? `<span class="project-tag">${proj.area}</span>` : ""}
+                    ${proj.difficulty ? `<span class="project-diff">${proj.difficulty}</span>` : ""}
+                    ${proj.duration ? `<span class="project-dur">${proj.duration}</span>` : ""}
+                </div>
+                ${proj.goal ? `<div class="project-goal">${proj.goal}</div>` : ""}
+                ${proj.guide ? `<div class="project-guide">Guide: ${proj.guide}</div>` : ""}
+            `;
+            list.appendChild(card);
+        });
+        block.appendChild(list);
+
+        addBackBtn(block, "← Back", () => navStack.length > 1 ? popNav() : showGlobalNav());
+        pushNav(() => showAllProjects());
+        scrollToBottom();
+    }
+
+    // ── Campus ───────────────────────────────────────────────────
+    async function showCampus() {
+        addTyping();
+        const data = await loadKB();
+        removeTyping();
+        if (!data) return;
+
+        const campus = data.campus;
+
+        const block = addBotBlock();
+        const p = document.createElement("p");
+        p.className = "bot-block-label";
+        p.innerHTML = `<strong>${opener()} Here's what campus life looks like at Workskills.</strong>`;
+        block.appendChild(p);
+
+        if (campus) {
+            const box = document.createElement("div");
+            box.className = "campus-box";
+            let html = "";
+            if (campus.location) html += `<div class="campus-row"><strong>Location:</strong> ${campus.location}</div>`;
+            if (campus.features && campus.features.length > 0) {
+                html += `<div class="campus-features">`;
+                campus.features.forEach(f => { html += `<span class="campus-feature-tag">${f}</span>`; });
+                html += `</div>`;
+            }
+            if (campus.typical_learning_flow) {
+                html += `<div class="campus-section"><strong>Typical Learning Flow:</strong></div><ol class="campus-flow">`;
+                campus.typical_learning_flow.forEach(step => { html += `<li>${step}</li>`; });
+                html += `</ol>`;
+            }
+            if (campus.typical_completion_time) html += `<div class="campus-row"><strong>Completion Time:</strong> ${campus.typical_completion_time}</div>`;
+            box.innerHTML = html;
+            block.appendChild(box);
+        }
+
+        addBackBtn(block, "← Back", () => navStack.length > 1 ? popNav() : showGlobalNav());
+        pushNav(() => showCampus());
+        scrollToBottom();
+    }
+
+    // ── About / Values ──────────────────────────────────────────
+    async function showAbout() {
+        addTyping();
+        const data = await loadKB();
+        removeTyping();
+        if (!data) return;
+
+        const identity = data.identity;
+        const about = data.about;
+        const values = data.values;
+
+        const block = addBotBlock();
+        const p = document.createElement("p");
+        p.className = "bot-block-label";
+        p.innerHTML = `<strong>${opener()} Here's a bit about Workskills X.</strong>`;
+        block.appendChild(p);
+
+        const box = document.createElement("div");
+        box.className = "about-box";
+        let html = "";
+        if (identity) {
+            html += `<div class="about-row"><strong>${identity.primary_positioning || ""}</strong></div>`;
+            if (identity.tagline_journey) html += `<div class="about-row">${identity.tagline_journey}</div>`;
+            if (identity.description) html += `<div class="about-desc">${identity.description}</div>`;
+            if (identity.founders_background) html += `<div class="about-row"><strong>Founded by:</strong> ${identity.founders_background}</div>`;
+        }
+        if (about) {
+            if (about.origin_story) html += `<div class="about-row">${about.origin_story}</div>`;
+            if (about.session_format) html += `<div class="about-row"><strong>Session Format:</strong> ${about.session_format}</div>`;
+            if (about.mission_statement) html += `<div class="about-row"><strong>Mission:</strong> ${about.mission_statement}</div>`;
+        }
+        box.innerHTML = html;
+        block.appendChild(box);
+
+        if (values && values.length > 0) {
+            const vp = document.createElement("p");
+            vp.className = "bot-block-label";
+            vp.textContent = "Our Values:";
+            block.appendChild(vp);
+            const vList = document.createElement("div");
+            vList.className = "values-list";
+            values.forEach(v => {
+                const item = document.createElement("div");
+                item.className = "value-item";
+                item.innerHTML = `<span class="value-name">${v.name}</span><span class="value-theme">${v.theme}</span>`;
+                vList.appendChild(item);
+            });
+            block.appendChild(vList);
+        }
+
+        addBackBtn(block, "← Back", () => navStack.length > 1 ? popNav() : showGlobalNav());
+        pushNav(() => showAbout());
+        scrollToBottom();
+    }
+
+    // ── Reviews ──────────────────────────────────────────────────
+    async function showReviews() {
+        addTyping();
+        const data = await loadKB();
+        removeTyping();
+        if (!data) return;
+
+        const reviews = data.reviews;
+
+        const block = addBotBlock();
+        const p = document.createElement("p");
+        p.className = "bot-block-label";
+        p.innerHTML = `<strong>${opener()} Here's what students are saying.</strong>`;
+        block.appendChild(p);
+
+        if (reviews) {
+            const box = document.createElement("div");
+            box.className = "reviews-box";
+            let html = "";
+            if (reviews.rating) {
+                html += `<div class="review-rating"><span class="review-stars">⭐</span><span class="review-num">${reviews.rating}</span><span class="review-count">(${reviews.count || "3,500+"} ratings)</span></div>`;
+            }
+            if (reviews.examples && reviews.examples.length > 0) {
+                html += `<div class="review-examples">`;
+                reviews.examples.slice(0, 3).forEach(r => {
+                    html += `<div class="review-item"><div class="review-name">${r.name} ${r.verified ? "✓" : ""}</div><div class="review-summary">${r.summary}</div></div>`;
+                });
+                html += `</div>`;
+            }
+            html += `<div class="review-note">Reviews are user-generated testimonials, not independently verified outcomes.</div>`;
+            box.innerHTML = html;
+            block.appendChild(box);
+        }
+
+        addBackBtn(block, "← Back", () => navStack.length > 1 ? popNav() : showGlobalNav());
+        pushNav(() => showReviews());
+        scrollToBottom();
+    }
+
+    // ── FAQs ─────────────────────────────────────────────────────
+    async function showFAQs() {
+        addTyping();
+        const data = await loadKB();
+        removeTyping();
+        if (!data) return;
+
+        const block = addBotBlock();
+        const p = document.createElement("p");
+        p.className = "bot-block-label";
+        p.innerHTML = `<strong>${opener()} Here are some commonly asked questions.</strong>`;
+        block.appendChild(p);
+
+        const faqs = [
+            { q: "What programs does Workskills offer?", a: () => { showCourses(); return true; } },
+            { q: "What is the fee structure?", a: () => { showFeesOverview(); return true; } },
+            { q: "How do I apply?", a: () => { showAdmission(); return true; } },
+            { q: "What certifications do I get?", a: "You receive IIT-certified certifications from institutes like IIT Patna, IIT Bombay, and IIT Guwahati upon successful completion." },
+            { q: "Is there placement assistance?", a: "Yes — Workskills provides 100% placement assistance with 500+ hiring companies. The model is: Learn → Intern → Get Placed." },
+            { q: "Can I pay in EMI?", a: "Yes, all programs offer EMI options ranging from ₹2,109 to ₹5,717 per month depending on the course." },
+            { q: "Who are the instructors?", a: () => { showMentors(); return true; } },
+            { q: "What tools will I learn?", a: () => { showAllSkills(); return true; } },
+            { q: "What are the live projects?", a: () => { showAllProjects(); return true; } },
+            { q: "Where is the campus?", a: "The Workskills campus is located in Jaipur, Rajasthan. It's an offline, small-batch learning environment." },
+            { q: "What are the contact details?", a: () => { showContact(); return true; } },
+        ];
+
+        const list = document.createElement("div");
+        list.className = "faq-list";
+        faqs.forEach(faq => {
+            const item = document.createElement("div");
+            item.className = "faq-item";
+            const isAction = typeof faq.a === "function";
+
+            const qDiv = document.createElement("div");
+            qDiv.className = "faq-q";
+            qDiv.textContent = `Q: ${faq.q}`;
+            item.appendChild(qDiv);
+
+            if (!isAction) {
+                const aDiv = document.createElement("div");
+                aDiv.className = "faq-a";
+                aDiv.textContent = `A: ${faq.a}`;
+                item.appendChild(aDiv);
+            } else {
+                const aBtn = document.createElement("button");
+                aBtn.className = "faq-link-btn";
+                aBtn.textContent = "Show answer →";
+                aBtn.addEventListener("click", faq.a);
+                item.appendChild(aBtn);
+            }
+
+            list.appendChild(item);
+        });
+        block.appendChild(list);
+
+        const nav = makeBtnGrid(block, "chat-btn-grid nav-grid");
+        addBtn(nav, "📚 Courses", () => showCourses(), "chat-action-btn");
+        addBtn(nav, "📞 Contact", () => showContact(), "chat-action-btn");
+
+        addMainMenuBtn(block);
+        pushNav(() => showFAQs());
+        scrollToBottom();
+    }
+
+    // ── Main Message Handler ─────────────────────────────────────
+    async function handleMessage(message) {
+        if (isSending || !message.trim()) return;
+        isSending = true;
+        chatSend.disabled = true;
+
+        addUserMessage(message);
+        chatInput.value = "";
+
+        const intent = detectIntent(message);
+        lastIntent = intent;
+
+        if (intent.type !== "general") {
+            addTyping();
+            await loadKB();
+            removeTyping();
+
+            switch (intent.type) {
+                case "courses": showCourses(); break;
+                case "course_direct": showCourseDetail(intent.courseId || selectedCourseId); break;
+                case "curriculum": showCurriculum(intent.courseId || selectedCourseId || "data-analytics"); break;
+                case "projects": showProjects(intent.courseId || selectedCourseId || "data-analytics"); break;
+                case "certification": intent.courseId ? showCertification(intent.courseId) : showCertificationOverview(); break;
+                case "skills": showSkills(intent.courseId || selectedCourseId || "data-analytics"); break;
+                case "fees": intent.courseId ? showFeesDetail(intent.courseId) : showFeesOverview(); break;
+                case "admission": intent.courseId ? showAdmissionForCourse(intent.courseId) : showAdmission(); break;
+                case "eligibility": showEligibility(intent.courseId || selectedCourseId); break;
+                case "contact": showContact(); break;
+                case "placement": showPlacement(); break;
+                case "mentors": showMentors(); break;
+                case "tools": showAllSkills(); break;
+                case "campus": showCampus(); break;
+                case "values": case "about": showAbout(); break;
+                case "reviews": showReviews(); break;
+                case "faq": showFAQs(); break;
+                default: showWelcome(); break;
+            }
+
+
+} else {
+            addTyping();
+            await new Promise(r => setTimeout(r, 500));
+            removeTyping();
+            addBotText("I can help you with courses, fees, admission, placement, and more. Try typing 'courses', 'fees', 'contact', or tap a button below.");
+            showWelcome();
+        }
+
+        isSending = false;
+        chatSend.disabled = false;
+        chatInput.focus();
+    }
+
+    // ── Welcome Buttons Initialization ───────────────────────────
+    function initWelcomeButtons() {
+        const container = document.getElementById("welcomeButtons");
+        if (!container) return;
+        const grid = container.querySelector(".chat-btn-grid");
+        if (!grid) return;
+
+        const welcomeItems = [
+            { label: "📚 Browse Courses", msg: "show courses", primary: true },
+            { label: "📝 How to Join", msg: "how to join" },
+            { label: "💰 View Fees", msg: "fees" },
+            { label: "📞 Contact Us", msg: "contact" },
+            { label: "🎯 Career & Placement", msg: "placement" },
+            { label: "❓ FAQs", msg: "faq" },
+        ];
+
+        welcomeItems.forEach(item => {
+            const btn = document.createElement("button");
+            btn.className = item.primary ? "chat-action-btn primary" : "chat-action-btn";
+            btn.textContent = item.label;
+            btn.addEventListener("click", () => handleMessage(item.msg));
+            grid.appendChild(btn);
+        });
+    }
+
+    // ── Event Listeners ──────────────────────────────────────────
+    function toggleChat() {
+        const isHidden = chatPanel.classList.contains("d-none");
+        if (isHidden) {
+            chatPanel.classList.remove("d-none");
+            chatLauncher.style.display = "none";
+            chatInput.focus();
+        } else {
+            chatPanel.classList.add("d-none");
+            chatLauncher.style.display = "flex";
+        }
+    }
+
+    chatLauncher.addEventListener("click", toggleChat);
+    chatClose.addEventListener("click", toggleChat);
+    chatForm.addEventListener("submit", (e) => { e.preventDefault(); handleMessage(chatInput.value); });
+    chatInput.addEventListener("keydown", (e) => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); handleMessage(chatInput.value); } });
+
+    // Initialize welcome buttons
+    initWelcomeButtons();
+});
+
+    </script>
+</body>
+</html>

@@ -247,7 +247,8 @@ def chat():
         }), 200
 
 
+load_knowledge_base()
+init_gemini()
+
 if __name__ == "__main__":
-    load_knowledge_base()
-    init_gemini()
     app.run(debug=True, port=5000)
