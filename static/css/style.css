@@ -1,0 +1,1836 @@
+:root {
+    --ws-green: #4CAF7D;
+    --ws-green-dark: #3d9468;
+    --ws-green-tint: #E8F7EF;
+    --ws-navy: #0F1C3F;
+    --ws-gray: #4B5563;
+    --ws-light-gray: #F3F4F6;
+    --ws-white: #FFFFFF;
+    --ws-border: #E5E7EB;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--ws-gray);
+    background: var(--ws-white);
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid var(--ws-border);
+    z-index: 1000;
+}
+
+.ws-logo {
+    width: 42px;
+    height: 42px;
+    background: var(--ws-green);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 800;
+    font-size: 1.4rem;
+}
+
+.navbar-nav .nav-link {
+    color: var(--ws-navy) !important;
+    font-weight: 500;
+    margin-left: 1.5rem;
+    transition: color 0.2s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--ws-green) !important;
+}
+
+/* Hero Section */
+.hero-section {
+    padding-top: 100px;
+    background: linear-gradient(135deg, var(--ws-white) 0%, var(--ws-green-tint) 100%);
+    min-height: 100vh;
+}
+
+.hero-badge {
+    display: inline-block;
+    background: var(--ws-green-tint);
+    color: var(--ws-green);
+    padding: 0.4rem 1rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-title {
+    font-size: 3.2rem;
+    font-weight: 800;
+    color: var(--ws-navy);
+    line-height: 1.15;
+    margin-bottom: 1.5rem;
+}
+
+.text-green {
+    color: var(--ws-green);
+}
+
+.hero-subtitle {
+    font-size: 1.1rem;
+    color: var(--ws-gray);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    max-width: 500px;
+}
+
+.hero-cta .btn {
+    padding: 0.7rem 1.8rem;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.hero-badges {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+}
+
+.badge-item {
+    background: var(--ws-white);
+    border: 1px solid var(--ws-border);
+    padding: 0.4rem 1rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--ws-navy);
+}
+
+.hero-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+}
+
+.hero-collage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.collage-card {
+    background: var(--ws-white);
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s;
+}
+
+.collage-card:hover {
+    transform: translateY(-4px);
+}
+
+.collage-main {
+    grid-column: span 2;
+    background: var(--ws-green);
+    color: white;
+}
+
+.collage-main p {
+    color: white;
+    font-weight: 600;
+    margin: 0;
+}
+
+.student-emoji {
+    font-size: 3rem;
+    margin-bottom: 0.8rem;
+}
+
+.collage-secondary,
+.collage-tertiary {
+    background: var(--ws-green-tint);
+}
+
+.collage-secondary p,
+.collage-tertiary p {
+    color: var(--ws-navy);
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.company-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+    justify-content: center;
+}
+
+.company-badge {
+    background: var(--ws-white);
+    border: 1px solid var(--ws-border);
+    padding: 0.3rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--ws-navy);
+}
+
+/* Buttons */
+.btn-ws-primary {
+    background: var(--ws-green);
+    border-color: var(--ws-green);
+    color: white;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.btn-ws-primary:hover {
+    background: var(--ws-green-dark);
+    border-color: var(--ws-green-dark);
+    color: white;
+}
+
+.btn-ws-secondary {
+    background: var(--ws-white);
+    border: 2px solid var(--ws-navy);
+    color: var(--ws-navy);
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.btn-ws-secondary:hover {
+    background: var(--ws-navy);
+    color: white;
+}
+
+/* Stats Section */
+.stats-section {
+    padding: 5rem 0;
+    background: var(--ws-white);
+}
+
+.stat-card {
+    text-align: center;
+    padding: 2rem 1.5rem;
+    border-radius: 16px;
+    background: var(--ws-green-tint);
+    transition: transform 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-4px);
+}
+
+.stat-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.stat-number {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--ws-navy);
+    margin-bottom: 0.3rem;
+}
+
+.stat-label {
+    color: var(--ws-gray);
+    font-weight: 500;
+    margin: 0;
+}
+
+/* Programs Section */
+.programs-section {
+    padding: 5rem 0;
+    background: var(--ws-light-gray);
+}
+
+.section-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--ws-navy);
+}
+
+.section-subtitle {
+    color: var(--ws-gray);
+    font-size: 1.05rem;
+    margin-top: 0.5rem;
+}
+
+.program-card {
+    background: var(--ws-white);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.program-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.program-badge {
+    display: inline-block;
+    background: var(--ws-green-tint);
+    color: var(--ws-green);
+    padding: 0.3rem 0.8rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.program-card h4 {
+    color: var(--ws-navy);
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+
+.program-institute {
+    color: var(--ws-green);
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.program-price {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--ws-navy);
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 5rem 0;
+    background: var(--ws-navy);
+}
+
+.cta-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.cta-subtitle {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.cta-buttons .btn-ws-primary {
+    background: var(--ws-green);
+    border-color: var(--ws-green);
+}
+
+.cta-buttons .btn-ws-secondary {
+    background: transparent;
+    border-color: white;
+    color: white;
+}
+
+.cta-buttons .btn-ws-secondary:hover {
+    background: white;
+    color: var(--ws-navy);
+}
+
+/* Footer */
+.ws-footer {
+    background: var(--ws-navy);
+    padding: 3rem 0 1.5rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-heading {
+    color: white;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-links a:hover {
+    color: var(--ws-green);
+}
+
+.footer-text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.footer-divider {
+    border-color: rgba(255, 255, 255, 0.1);
+    margin: 2rem 0 1rem;
+}
+
+.footer-copyright {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Chat Widget */
+.chat-widget {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 9999;
+    font-family: 'Poppins', sans-serif;
+}
+
+.chat-launcher {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--ws-green);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(76, 175, 125, 0.4);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.chat-launcher:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 28px rgba(76, 175, 125, 0.5);
+}
+
+.chat-panel {
+    position: absolute;
+    bottom: 76px;
+    right: 0;
+    width: 380px;
+    height: 520px;
+    background: var(--ws-white);
+    border-radius: 16px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    animation: chatSlideUp 0.3s ease;
+}
+
+@keyframes chatSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.chat-header {
+    background: var(--ws-green);
+    color: white;
+    padding: 1rem 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ws-logo-sm {
+    width: 34px;
+    height: 34px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 800;
+    font-size: 1.1rem;
+}
+
+.chat-header-title {
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+.chat-header-status {
+    font-size: 0.75rem;
+    opacity: 0.85;
+}
+
+.chat-close {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.6rem;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0;
+    opacity: 0.85;
+    transition: opacity 0.2s;
+}
+
+.chat-close:hover {
+    opacity: 1;
+}
+
+.chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    background: var(--ws-light-gray);
+}
+
+.chat-message {
+    display: flex;
+    max-width: 85%;
+}
+
+.bot-message {
+    align-self: flex-start;
+}
+
+.user-message {
+    align-self: flex-end;
+}
+
+.message-bubble {
+    padding: 0.75rem 1rem;
+    border-radius: 14px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
+
+.bot-bubble {
+    background: var(--ws-white);
+    color: var(--ws-navy);
+    border-bottom-left-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.user-bubble {
+    background: var(--ws-green);
+    color: white;
+    border-bottom-right-radius: 4px;
+}
+
+.typing-indicator {
+    display: flex;
+    gap: 4px;
+    padding: 0.75rem 1rem;
+    background: var(--ws-white);
+    border-radius: 14px;
+    border-bottom-left-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+    width: fit-content;
+}
+
+.typing-dot {
+    width: 8px;
+    height: 8px;
+    background: #9CA3AF;
+    border-radius: 50%;
+    animation: typingBounce 1.4s infinite ease-in-out;
+}
+
+.typing-dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.typing-dot:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes typingBounce {
+    0%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-6px); }
+}
+
+.chat-input-area {
+    padding: 0.8rem;
+    border-top: 1px solid var(--ws-border);
+    background: var(--ws-white);
+}
+
+.chat-form {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.chat-input {
+    flex: 1;
+    border: 1px solid var(--ws-border);
+    border-radius: 10px;
+    padding: 0.65rem 1rem;
+    font-size: 0.9rem;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.chat-input:focus {
+    border-color: var(--ws-green);
+}
+
+.chat-send {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    background: var(--ws-green);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+    flex-shrink: 0;
+}
+
+.chat-send:hover {
+    background: var(--ws-green-dark);
+}
+
+.chat-send:disabled {
+    background: #9CA3AF;
+    cursor: not-allowed;
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   Interactive Assistant UI
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* Bot Block — container for all structured bot responses */
+.bot-block {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    gap: 0.4rem;
+}
+
+.bot-block-label {
+    font-size: 0.85rem;
+    color: var(--ws-navy);
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.bot-block-intro {
+    font-size: 0.8rem;
+    color: var(--ws-gray);
+    margin: 0;
+    line-height: 1.45;
+}
+
+/* ── Button Group Labels ──────────────────────────────────────── */
+.btn-group-label {
+    font-size: 0.7rem;
+    color: var(--ws-gray);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 0.4rem 0 0.1rem 0;
+    padding: 0;
+}
+
+/* ── Button Grids ──────────────────────────────────────────────── */
+.chat-btn-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+}
+
+.chat-btn-grid.courses-grid {
+    flex-direction: column;
+}
+
+.chat-btn-grid.nav-grid {
+    margin-top: 0.25rem;
+    padding-top: 0.4rem;
+    border-top: 1px solid var(--ws-border);
+}
+
+.chat-btn-grid.action-grid {
+    margin-top: 0.2rem;
+}
+
+/* ── Action Buttons ────────────────────────────────────────────── */
+.chat-action-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    background: var(--ws-white);
+    border: 1.5px solid var(--ws-border);
+    border-radius: 8px;
+    padding: 0.45rem 0.75rem;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--ws-navy);
+    transition: all 0.2s;
+    white-space: nowrap;
+}
+
+.chat-action-btn:hover {
+    border-color: var(--ws-green);
+    background: var(--ws-green-tint);
+    color: var(--ws-green-dark);
+    transform: translateY(-1px);
+}
+
+.chat-action-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.chat-action-btn.primary {
+    background: var(--ws-green);
+    border-color: var(--ws-green);
+    color: white;
+}
+
+.chat-action-btn.primary:hover {
+    background: var(--ws-green-dark);
+    border-color: var(--ws-green-dark);
+    color: white;
+}
+
+.chat-action-btn.small {
+    font-size: 0.72rem;
+    padding: 0.35rem 0.6rem;
+}
+
+/* ── Back Button ───────────────────────────────────────────────── */
+.chat-back-btn {
+    display: inline-block;
+    background: none;
+    border: none;
+    color: var(--ws-gray);
+    font-size: 0.75rem;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0.35rem 0;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    transition: color 0.2s;
+    margin-top: 0.15rem;
+}
+
+.chat-back-btn:hover {
+    color: var(--ws-green);
+}
+
+/* ── Course Buttons ────────────────────────────────────────────── */
+.chat-course-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: var(--ws-white);
+    border: 1.5px solid var(--ws-border);
+    border-radius: 10px;
+    padding: 0.6rem 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+}
+
+.chat-course-btn:hover {
+    border-color: var(--ws-green);
+    background: var(--ws-green-tint);
+    transform: translateY(-1px);
+}
+
+.course-btn-title {
+    font-weight: 600;
+    font-size: 0.82rem;
+    color: var(--ws-navy);
+    line-height: 1.3;
+}
+
+.course-btn-sub {
+    font-size: 0.7rem;
+    color: var(--ws-green);
+    font-weight: 500;
+}
+
+/* ── Course Overview Card ──────────────────────────────────────── */
+.course-overview-card {
+    background: var(--ws-white);
+    border: 1px solid var(--ws-border);
+    border-radius: 12px;
+    padding: 0.85rem;
+}
+
+.course-ov-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.4rem;
+}
+
+.course-ov-badge {
+    background: var(--ws-green);
+    color: white;
+    padding: 0.2rem 0.55rem;
+    border-radius: 50px;
+    font-size: 0.68rem;
+    font-weight: 600;
+}
+
+.course-ov-inst {
+    color: var(--ws-green);
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.course-ov-name {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--ws-navy);
+    margin: 0 0 0.35rem 0;
+}
+
+.course-ov-desc {
+    font-size: 0.8rem;
+    color: var(--ws-gray);
+    line-height: 1.5;
+    margin: 0 0 0.6rem 0;
+}
+
+.course-ov-meta {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.4rem;
+}
+
+.meta-chip {
+    display: flex;
+    flex-direction: column;
+    background: var(--ws-green-tint);
+    border-radius: 8px;
+    padding: 0.4rem;
+    text-align: center;
+}
+
+.meta-chip-label {
+    font-size: 0.62rem;
+    color: var(--ws-gray);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.meta-chip-val {
+    font-size: 0.75rem;
+    color: var(--ws-navy);
+    font-weight: 700;
+}
+
+/* ── Module List ───────────────────────────────────────────────── */
+.module-btn-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.module-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: var(--ws-white);
+    border: 1.5px solid var(--ws-border);
+    border-radius: 10px;
+    padding: 0.55rem 0.8rem;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.2s;
+    text-align: left;
+}
+
+.module-btn:hover {
+    border-color: var(--ws-green);
+    background: var(--ws-green-tint);
+    transform: translateY(-1px);
+}
+
+.module-num {
+    width: 26px;
+    height: 26px;
+    background: var(--ws-green);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.72rem;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.module-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.module-name {
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: var(--ws-navy);
+    line-height: 1.3;
+}
+
+.module-count {
+    font-size: 0.68rem;
+    color: var(--ws-gray);
+}
+
+/* ── Lesson List ───────────────────────────────────────────────── */
+.lesson-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 0.4rem 0;
+}
+
+.lesson-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.35rem 0.6rem;
+    background: var(--ws-white);
+    border-radius: 8px;
+    border: 1px solid var(--ws-border);
+}
+
+.lesson-num {
+    width: 20px;
+    height: 20px;
+    background: var(--ws-green-tint);
+    color: var(--ws-green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.65rem;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.lesson-text {
+    font-size: 0.78rem;
+    color: var(--ws-navy);
+}
+
+/* ── Skill Tags ────────────────────────────────────────────────── */
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    padding: 0.25rem 0;
+}
+
+.skill-tag {
+    display: inline-block;
+    background: var(--ws-green-tint);
+    color: var(--ws-green-dark);
+    padding: 0.25rem 0.55rem;
+    border-radius: 50px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    border: 1px solid rgba(76, 175, 125, 0.2);
+}
+
+/* ── Project List ──────────────────────────────────────────────── */
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    padding: 0.25rem 0;
+}
+
+.project-card {
+    background: var(--ws-white);
+    border: 1px solid var(--ws-border);
+    border-radius: 10px;
+    padding: 0.6rem 0.8rem;
+    transition: border-color 0.2s;
+}
+
+.project-card:hover {
+    border-color: var(--ws-green);
+}
+
+.project-title {
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: var(--ws-navy);
+    margin-bottom: 0.2rem;
+}
+
+.project-meta {
+    display: flex;
+    gap: 0.35rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.2rem;
+}
+
+.project-tag {
+    background: var(--ws-green-tint);
+    color: var(--ws-green-dark);
+    padding: 0.12rem 0.45rem;
+    border-radius: 50px;
+    font-size: 0.65rem;
+    font-weight: 600;
+}
+
+.project-diff, .project-dur {
+    color: var(--ws-gray);
+    font-size: 0.65rem;
+    font-weight: 500;
+}
+
+.project-goal {
+    font-size: 0.75rem;
+    color: var(--ws-gray);
+    line-height: 1.4;
+    margin-top: 0.2rem;
+}
+
+.project-guide {
+    font-size: 0.72rem;
+    color: var(--ws-green);
+    font-weight: 500;
+    margin-top: 0.15rem;
+}
+
+/* ── Certification Box ─────────────────────────────────────────── */
+.cert-box {
+    background: var(--ws-white);
+    border: 1px solid var(--ws-border);
+    border-radius: 10px;
+    padding: 0.8rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+}
+
+.cert-icon {
+    font-size: 1.4rem;
+    flex-shrink: 0;
+}
+
+.cert-content {
+    flex: 1;
+}
+
+.cert-text {
+    font-size: 0.8rem;
+    color: var(--ws-navy);
+    line-height: 1.5;
+    margin: 0 0 0.3rem 0;
+}
+
+.cert-sub {
+    font-size: 0.72rem;
+    color: var(--ws-green);
+    font-weight: 500;
+    margin: 0 0 0.2rem 0;
+}
+
+.cert-note {
+    font-size: 0.72rem;
+    color: var(--ws-gray);
+    margin: 0;
+}
+
+/* ── Fee List ──────────────────────────────────────────────────── */
+.fee-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.fee-card {
+    background: var(--ws-white);
+    border: 1px solid var(--ws-border);
+    border-radius: 10px;
+    padding: 0.6rem 0.8rem;
+    transition: border-color 0.2s;
+    cursor: pointer;
+}
+
+.fee-card:hover {
+    border-color: var(--ws-green);
+}
+
+.fee-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.25rem;
+}
+
+.fee-card-name {
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: var(--ws-navy);
+}
+
+.fee-card-inst {
+    font-size: 0.68rem;
+    color: var(--ws-green);
+    font-weight: 500;
+}
+
+.fee-card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fee-card-price {
+    font-size: 0.95rem;
+    font-weight: 800;
+    color: var(--ws-navy);
+}
+
+.fee-card-emi {
+    font-size: 0.7rem;
+    color: var(--ws-gray);
+}
+
+.fee-note {
+    font-size: 0.72rem;
+    color: var(--ws-gray);
+    font-style: italic;
+    margin: 0.3rem 0 0 0;
+}
+
+/* ── Fee Detail Box ────────────────────────────────────────────── */
+.fee-detail-box {
+    background: var(--ws-green-tint);
+    border: 1.5px solid var(--ws-green);
+    border-radius: 10px;
+    padding: 0.8rem;
+}
+
+.fee-detail-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem 0;
+}
+
+.fee-detail-label {
+    font-size: 0.78rem;
+    color: var(--ws-gray);
+    font-weight: 500;
+}
+
+.fee-detail-val {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--ws-navy);
+}
+
+.fee-detail-val.big {
+    font-size: 1.05rem;
+}
+
+.fee-detail-note {
+    font-size: 0.72rem;
+    color: var(--ws-gray);
+    margin-top: 0.4rem;
+    padding-top: 0.4rem;
+    border-top: 1px solid rgba(76, 175, 125, 0.2);
+}
+
+/* ── Step List (Admission) ─────────────────────────────────────── */
+.step-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.step-item {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: var(--ws-white);
+    border: 1px solid var(--ws-border);
+    border-radius: 10px;
+    padding: 0.55rem 0.8rem;
+}
+
+.step-num {
+    width: 26px;
+    height: 26px;
+    background: var(--ws-green);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.72rem;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.step-text {
+    font-size: 0.8rem;
+    color: var(--ws-navy);
+    line-height: 1.4;
+}
+
+.admission-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    padding: 0.5rem 0;
+}
+
+.admission-stat {
+    font-size: 0.78rem;
+    color: var(--ws-navy);
+}
+
+/* ── Eligibility Box ───────────────────────────────────────────── */
+.eligibility-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.elig-section {
+    font-size: 0.82rem;
+    color: var(--ws-navy);
+    line-height: 1.5;
+}
+
+.audience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.audience-item {
+    display: flex;
+    flex-direction: column;
+    background: var(--ws-white);
+    border: 1px solid var(--ws-border);
+    border-radius: 8px;
+    padding: 0.5rem 0.7rem;
+}
+
+.audience-type {
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: var(--ws-navy);
+}
+
+.audience-detail {
+    font-size: 0.72rem;
+    color: var(--ws-gray);
+}
+
+/* ── Enrollment Box ────────────────────────────────────────────── */
+.enroll-box {
+    background: var(--ws-green-tint);
+    border: 1.5px solid var(--ws-green);
+    border-radius: 10px;
+    padding: 0.8rem;
+}
+
+.enroll-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.25rem 0;
+}
+
+.enroll-label {
+    font-size: 0.78rem;
+    color: var(--ws-gray);
+    font-weight: 500;
+}
+
+.enroll-val {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--ws-navy);
+}
+
+.enroll-cta {
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid rgba(76, 175, 125, 0.2);
+}
+
+.enroll-cta p {
+    font-size: 0.8rem;
+    color: var(--ws-navy);
+    margin: 0 0 0.2rem 0;
+    line-height: 1.5;
+}
+
+.enroll-note {
+    font-size: 0.72rem;
+    color: var(--ws-gray);
+    font-style: italic;
+}
+
+/* ── Apply Box ─────────────────────────────────────────────────── */
+.apply-box {
+    background: var(--ws-white);
+    border: 1px solid var(--ws-border);
+    border-radius: 10px;
+    padding: 0.8rem;
+}
+
+.apply-box p {
+    font-size: 0.82rem;
+    color: var(--ws-navy);
+    margin: 0 0 0.3rem 0;
+    line-height: 1.5;
+}
+
+.apply-note {
+    font-size: 0.72rem;
+    color: var(--ws-gray);
+    font-style: italic;
+}
+
+/* ── Contact Box ───────────────────────────────────────────────── */
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contact-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    background: var(--ws-white);
+    border: 1px solid var(--ws-border);
+    border-radius: 10px;
+    padding: 0.6rem 0.8rem;
+}
+
+.contact-icon {
+    font-size: 1.2rem;
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-val {
+    font-size: 0.82rem;
+    color: var(--ws-navy);
+    font-weight: 600;
+}
+
+.contact-val.small {
+    font-size: 0.72rem;
+    color: var(--ws-gray);
+    font-weight: 400;
+}
+
+.contact-note {
+    font-size: 0.72rem;
+    color: var(--ws-gray);
+    font-style: italic;
+    padding: 0.3rem 0;
+}
+
+/* ── Placement Box ─────────────────────────────────────────────── */
+.placement-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.placement-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.4rem;
+}
+
+.p-stat {
+    display: flex;
+    flex-direction: column;
+    background: var(--ws-green-tint);
+    border-radius: 10px;
+    padding: 0.55rem;
+    text-align: center;
+}
+
+.p-stat-num {
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--ws-navy);
+}
+
+.p-stat-label {
+    font-size: 0.65rem;
+    color: var(--ws-gray);
+    font-weight: 500;
+}
+
+.placement-section {
+    font-size: 0.8rem;
+    color: var(--ws-navy);
+    margin-top: 0.2rem;
+}
+
+.placement-list {
+    list-style: none;
+    padding: 0;
+    margin: 0.2rem 0 0 0;
+}
+
+.placement-list li {
+    font-size: 0.78rem;
+    color: var(--ws-gray);
+    padding: 0.15rem 0 0.15rem 1rem;
+    position: relative;
+}
+
+.placement-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0.2rem;
+    color: var(--ws-green);
+    font-weight: 700;
+}
+
+.what-get-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    margin-top: 0.3rem;
+}
+
+.what-get-tag {
+    background: var(--ws-green-tint);
+    color: var(--ws-green-dark);
+    padding: 0.2rem 0.5rem;
+    border-radius: 50px;
+    font-size: 0.68rem;
+    font-weight: 600;
+}
+
+.placement-note {
+    font-size: 0.7rem;
+    color: var(--ws-gray);
+    font-style: italic;
+    margin-top: 0.3rem;
+}
+
+/* ── Mentor List ───────────────────────────────────────────────── */
+.mentor-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.mentor-card {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: var(--ws-white);
+    border: 1px solid var(--ws-border);
+    border-radius: 10px;
+    padding: 0.6rem 0.8rem;
+}
+
+.mentor-avatar {
+    width: 36px;
+    height: 36px;
+    background: var(--ws-green);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+}
+
+.mentor-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.mentor-name {
+    font-weight: 600;
+    font-size: 0.82rem;
+    color: var(--ws-navy);
+}
+
+.mentor-role {
+    font-size: 0.72rem;
+    color: var(--ws-green);
+    font-weight: 500;
+}
+
+.mentor-projects {
+    font-size: 0.68rem;
+    color: var(--ws-gray);
+    margin-top: 0.1rem;
+}
+
+/* ── Tool Category ─────────────────────────────────────────────── */
+.tool-cat-name {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--ws-navy);
+    margin: 0.3rem 0 0.15rem 0;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+/* ── Campus Box ────────────────────────────────────────────────── */
+.campus-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.campus-row {
+    font-size: 0.82rem;
+    color: var(--ws-navy);
+    line-height: 1.5;
+}
+
+.campus-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+}
+
+.campus-feature-tag {
+    background: var(--ws-green-tint);
+    color: var(--ws-green-dark);
+    padding: 0.2rem 0.5rem;
+    border-radius: 50px;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.campus-section {
+    font-size: 0.8rem;
+    color: var(--ws-navy);
+    font-weight: 600;
+    margin-top: 0.3rem;
+}
+
+.campus-flow {
+    padding-left: 1.2rem;
+    margin: 0.2rem 0;
+}
+
+.campus-flow li {
+    font-size: 0.78rem;
+    color: var(--ws-gray);
+    padding: 0.12rem 0;
+}
+
+/* ── About Box ─────────────────────────────────────────────────── */
+.about-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.about-row {
+    font-size: 0.82rem;
+    color: var(--ws-navy);
+    line-height: 1.5;
+}
+
+.about-desc {
+    font-size: 0.8rem;
+    color: var(--ws-gray);
+    line-height: 1.5;
+}
+
+.values-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.value-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--ws-white);
+    border: 1px solid var(--ws-border);
+    border-radius: 8px;
+    padding: 0.45rem 0.7rem;
+}
+
+.value-name {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--ws-navy);
+}
+
+.value-theme {
+    font-size: 0.7rem;
+    color: var(--ws-green);
+    font-weight: 500;
+}
+
+/* ── Reviews Box ───────────────────────────────────────────────── */
+.reviews-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.review-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.4rem 0;
+}
+
+.review-stars {
+    font-size: 1rem;
+}
+
+.review-num {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--ws-navy);
+}
+
+.review-count {
+    font-size: 0.75rem;
+    color: var(--ws-gray);
+}
+
+.review-examples {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.review-item {
+    background: var(--ws-white);
+    border: 1px solid var(--ws-border);
+    border-radius: 8px;
+    padding: 0.5rem 0.7rem;
+}
+
+.review-name {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--ws-navy);
+    margin-bottom: 0.15rem;
+}
+
+.review-summary {
+    font-size: 0.75rem;
+    color: var(--ws-gray);
+    line-height: 1.4;
+}
+
+.review-note {
+    font-size: 0.7rem;
+    color: var(--ws-gray);
+    font-style: italic;
+}
+
+/* ── FAQ List ──────────────────────────────────────────────────── */
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.faq-item {
+    background: var(--ws-white);
+    border: 1px solid var(--ws-border);
+    border-radius: 10px;
+    padding: 0.6rem 0.8rem;
+}
+
+.faq-q {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--ws-navy);
+    margin-bottom: 0.25rem;
+}
+
+.faq-a {
+    font-size: 0.78rem;
+    color: var(--ws-gray);
+    line-height: 1.5;
+}
+
+.faq-link-btn {
+    background: none;
+    border: none;
+    color: var(--ws-green);
+    font-size: 0.78rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    transition: color 0.2s;
+}
+
+.faq-link-btn:hover {
+    color: var(--ws-green-dark);
+}
+
+/* ── Main Menu Button ─────────────────────────────────────────── */
+.chat-main-menu-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    background: none;
+    border: none;
+    color: var(--ws-gray);
+    font-size: 0.75rem;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0.35rem 0;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    transition: color 0.2s;
+    margin-top: 0.15rem;
+}
+
+.chat-main-menu-btn:hover {
+    color: var(--ws-green);
+}
+
+/* ── Disabled State ───────────────────────────────────────────── */
+.chat-action-btn:disabled,
+.chat-course-btn:disabled,
+.module-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   Responsive
+   ═══════════════════════════════════════════════════════════════════ */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .hero-collage {
+        grid-template-columns: 1fr;
+    }
+
+    .collage-main {
+        grid-column: span 1;
+    }
+
+    .chat-panel {
+        width: calc(100vw - 32px);
+        right: -8px;
+        height: 480px;
+    }
+
+    .stat-number {
+        font-size: 1.8rem;
+    }
+
+    .course-ov-meta {
+        grid-template-columns: 1fr;
+    }
+
+    .placement-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .chat-course-btn {
+        width: 100%;
+    }
+
+    .chat-action-btn {
+        min-height: 36px;
+        padding: 0.5rem 0.8rem;
+        font-size: 0.8rem;
+    }
+
+    .chat-btn-grid {
+        gap: 0.4rem;
+    }
+
+    .module-btn {
+        min-height: 44px;
+    }
+
+    .step-item {
+        min-height: 44px;
+    }
+}
+
+@media (max-width: 380px) {
+    .chat-panel {
+        width: 100vw;
+        right: -16px;
+        height: 100vh;
+        border-radius: 0;
+        top: 0;
+        bottom: 0;
+    }
+
+    .chat-action-btn {
+        font-size: 0.78rem;
+        padding: 0.55rem 0.7rem;
+    }
+}

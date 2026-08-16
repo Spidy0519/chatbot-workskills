@@ -1,0 +1,658 @@
+{
+  "metadata": {
+    "organization": "Workskills",
+    "brand_aliases": ["Workskills", "WorkSkills"],
+    "primary_domain": "https://workskills.in/",
+    "program_domain": "https://program.workskills.in/",
+    "content_type": "public_website_knowledge_base",
+    "purpose": ["RAG", "AI assistant grounding", "chatbot training"],
+    "language": "English",
+    "last_checked": "2026-08-15",
+    "scope": "public website information only",
+    "privacy_scope": "no private/login-only information",
+    "verification_status": "website marketing claims, not independently verified",
+    "crawl_note": "Represents publicly accessible/indexed pages found during this research pass, not private backend data. Prices, batches and claims can change and should be refreshed periodically."
+  },
+
+  "organization_identity": {
+    "primary_positioning": "India's #1 Platform for IIT Certified Programs",
+    "tagline_journey": "Learn → Intern → Get Placed",
+    "description": "Training and career platform focused on practical learning, internships, live projects, IIT certifications, mentorship and job assistance.",
+    "founded_city": "Jaipur",
+    "founders_background": "IIT Kharagpur alumni",
+    "learning_model": "Offline, small-batch learning designed to make learning feel like real work",
+    "founder_note": {
+      "experience": "More than a decade of corporate leadership experience",
+      "associated_companies": ["Flipkart", "Dell", "Microsoft"],
+      "mission_statement": "Bridge the gap between education and employment with accountability."
+    }
+  },
+
+  "homepage_claims": {
+    "source_page": "https://workskills.in/index.html",
+    "claims": [
+      "India's #1 Platform for IIT Certified Programs",
+      "Built by IIT Kharagpur alumni",
+      "100% Job Assured Programs",
+      "Interview preparation",
+      "Referrals and support until an offer is accepted",
+      "4,500+ placements at top companies",
+      "Learn from top 1% instructors",
+      "Alumni placed across leading brands",
+      "Many learners finish training in 12–16 weeks",
+      "Online, live-guided sessions",
+      "Real mentors",
+      "Real projects",
+      "Real job outcomes",
+      "Industry mentorship",
+      "Guaranteed internships",
+      "Mock interviews",
+      "Live projects",
+      "2,000+ students placed (shown in one homepage section)",
+      "100% placement assistance",
+      "50% average salary increase",
+      "500+ hiring companies",
+      "₹12.4 lakh average package",
+      "4.7 rating",
+      "3,500+ ratings"
+    ]
+  },
+
+  "career_path_model": {
+    "learn": "Students learn through lessons, practical exercises, mentor guidance and projects.",
+    "intern": "Students complete an internship or in-built startup internship after training.",
+    "get_placed": "Career assistance including interview preparation, referrals, profile support and placement assistance.",
+    "typical_duration": {
+      "general_programs": "approximately 12–16 weeks",
+      "data_analytics_program": "8–12 weeks training + 4-week internship"
+    }
+  },
+
+  "programs": [
+    {
+      "name": "IIT Patna Generative AI Certification",
+      "institute": "IIT Patna",
+      "positioning": "Beginner to Pro",
+      "listed_fee_inr": 31000,
+      "emi": { "amount_inr": 2300, "installments": 12 }
+    },
+    {
+      "name": "IIT Patna Data Analytics Certification",
+      "institute": "IIT Patna",
+      "positioning": "Beginner Friendly",
+      "listed_fee_inr": 38000,
+      "emi": { "amount_inr": 2307, "installments": 15 }
+    },
+    {
+      "name": "IIT Bombay AI Business Analytics Certification",
+      "institute": "IIT Bombay",
+      "positioning": "Industry Ready",
+      "listed_fee_inr": 65000,
+      "emi": { "amount_inr": 5242, "installments": 12 }
+    },
+    {
+      "name": "IIT Patna AI Product Management Certification",
+      "institute": "IIT Patna",
+      "positioning": "100% Job Assistance",
+      "listed_fee_inr": 45000,
+      "emi": { "amount_inr": 2312, "installments": 18 }
+    },
+    {
+      "name": "IIT Guwahati AI Project Management Certification",
+      "institute": "IIT Guwahati",
+      "positioning": "Leadership Track",
+      "listed_fee_inr": 72000,
+      "emi": { "amount_inr": 5717, "installments": 12 }
+    },
+    {
+      "name": "IIT Patna AI & ML Certification",
+      "institute": "IIT Patna",
+      "positioning": "Flagship Program",
+      "listed_fee_inr": 54000,
+      "emi": { "amount_inr": 2109, "installments": 24 }
+    }
+  ],
+  "programs_note": "Program fees are time-sensitive website values and should not be treated as permanent prices.",
+
+  "what_students_get": [
+    "IIT certification",
+    "Live projects",
+    "In-built startup internship",
+    "Freelancing assistance",
+    "100% job assistance",
+    "Placement support",
+    "500+ hiring companies",
+    "Industry mentorship",
+    "Guaranteed internships",
+    "Mock interviews",
+    "Real portfolio projects",
+    "Career support",
+    "Interview preparation",
+    "Referrals"
+  ],
+  "certifying_institutes": ["IIT Bombay", "IIT Patna", "IIT Guwahati"],
+
+  "about_workskills": {
+    "source_page": "https://workskills.in/about-us.html",
+    "origin_story": "Started in Jaipur with the idea that learning should feel like real work.",
+    "founders": "IIT Kharagpur alumni",
+    "campus_model": "Offline campus, small-batch classes, daily practice, mentor support",
+    "session_format": "2–3 hour evening sessions",
+    "live_projects_cadence": "Conducted every week",
+    "capstone_projects": "Based on startup briefs",
+    "ai_included_tracks": ["Data Analytics", "Digital Marketing"],
+    "career_support": ["Mock interviews", "Profile help", "Referrals", "In-centre guidance"],
+    "outcome_statement": "Learners should leave with work they can present in interviews, including dashboards, reports, campaigns and other real-world projects.",
+    "mission_statement": "Bridge the gap between education and employment with accountability.",
+    "refund_wording_note": "The About page describes a placement-milestone model involving internships/interviews with hiring partners and a refund claim. Wording and refund amount differ from the dedicated program page, so an AI assistant should always quote the current applicable program policy rather than generalize this claim."
+  },
+
+  "company_values": {
+    "source_page": "https://workskills.in/about-us.html",
+    "values": [
+      { "name": "Care about our team", "theme": "support" },
+      { "name": "Be excellent to each other", "theme": "direct feedback" },
+      { "name": "Pride in what we do", "theme": "quality" },
+      { "name": "Students first, always", "theme": "learner-first decisions" },
+      { "name": "Do the impossible", "theme": "experimentation" },
+      { "name": "Sweat the small stuff", "theme": "attention to detail" }
+    ]
+  },
+
+  "campus_life": {
+    "source_page": "https://workskills.in/campus-life.html",
+    "location": "Jaipur",
+    "features": [
+      "Offline small-batch classes",
+      "Evening learning",
+      "Live projects",
+      "Mentor desk",
+      "AI practice",
+      "Share-and-review sessions",
+      "Career preparation blocks",
+      "Resume/profile work",
+      "Mock interviews",
+      "Teamwork spaces",
+      "Quiet study areas",
+      "Industry tools"
+    ],
+    "specialization_tools_used_for": ["AI-powered Data Analytics", "AI-powered Digital Marketing"],
+    "example_tools": ["Excel", "SQL", "Google Ads", "Meta Ads", "GA4"],
+    "typical_learning_flow": [
+      "Learn a tool or concept",
+      "Apply it to live projects",
+      "Ask mentors for help",
+      "Practise using AI",
+      "Demonstrate work and receive feedback",
+      "Work on resume/profile and interviews"
+    ],
+    "typical_completion_time": "12–16 weeks, with some learners placed during that period"
+  },
+
+  "data_analytics_program": {
+    "name": "Data Analytics with AI",
+    "positioning": "Job Assured Program",
+    "program_url": "https://program.workskills.in/",
+    "eligibility": {
+      "degrees": ["B.Tech", "BBA", "B.Com", "B.Sc"],
+      "audiences": [
+        { "type": "Final-year college students", "detail": "Open to all degrees and branches" },
+        { "type": "Career-break graduates", "detail": "1–5 years of gap after graduation" },
+        { "type": "Working professionals", "detail": "1–5 years of experience" },
+        { "type": "Students", "detail": "12th pass through 3rd year college" }
+      ]
+    },
+    "duration": {
+      "industrial_training_weeks": "8–12",
+      "internship_live_project_weeks": 4,
+      "job_assistance": "After internship"
+    },
+    "placement_claims": {
+      "job_assistance": true,
+      "average_ctc_lpa": "5.0–8.0",
+      "guaranteed_minimum_ctc_lpa": 5.0,
+      "pay_zero_if_unplaced": true,
+      "full_refund_if_offer_below_lpa": 5.0,
+      "disclaimer": "Website claims and may be subject to eligibility/terms."
+    },
+    "benefits": [
+      "AI specialization",
+      "ChatGPT and 40+ AI tools",
+      "Real-world training",
+      "Expert supervision",
+      "IIT KGP certificate",
+      "Internship experience",
+      "Internship stipends up to ₹15K/month",
+      "4+ startup live projects",
+      "100% job assurance claim"
+    ],
+    "program_structure": [
+      { "phase": "Phase 01", "duration": "8 Weeks Training", "description": "Theory, tools and job skills through industrial training." },
+      { "phase": "Phase 02", "duration": "4 Weeks Internship", "description": "Real-world internship/live-project experience." },
+      { "phase": "Phase 03", "duration": "Job Assistance", "description": "Career assistance to convert internship experience into a full-time job." }
+    ],
+    "certifications_mentioned": ["IIT certification", "Google certification", "Startup certifications"],
+    "pricing": {
+      "standard_fee_inr": 33322,
+      "fee_note": "+ GST",
+      "promotional_discount_pct": 91,
+      "enrolment_amount_inr": 2999,
+      "enrolment_note": "+ GST",
+      "job_assurance_message": "Pay ₹0 if Unplaced",
+      "minimum_ctc_claim_lpa": 5.0,
+      "full_refund_if_below_lpa": 5.0,
+      "rating_shown": 4.7,
+      "ratings_count_shown": "3,500+"
+    },
+    "pricing_discrepancy_warning": "The main Workskills homepage lists an IIT Patna Data Analytics Certification at ₹38,000, while the dedicated Data Analytics page currently shows a different fee structure (₹33,322 + GST standard, ₹2,999 + GST enrolment). Store as separate page-specific values."
+  },
+
+  "data_analytics_curriculum": {
+    "modules": [
+      {
+        "name": "Business Knowledge",
+        "lesson_count": 10,
+        "lessons": [
+          "Problem → Objective → Outcome mapping",
+          "North Star metric & KPI trees",
+          "Funnel math: Awareness → Purchase → Retention",
+          "Segmentation: RFM, CLV, personas",
+          "Business questions → Data questions",
+          "Impact vs effort prioritization",
+          "ROI estimation & back-of-envelope models",
+          "Requirement briefs & stakeholder alignment",
+          "Risk, assumptions, constraints log",
+          "Decision narratives & executive one-pager"
+        ]
+      },
+      {
+        "name": "Data Frameworks 101",
+        "lesson_count": 10,
+        "lessons": [
+          "Data lifecycle: collect → store → transform → use",
+          "Analytics layers: ELT/ETL, semantic models",
+          "Metric definitions & governance",
+          "Cohorts vs cross-sectional views",
+          "Time series & seasonality patterns",
+          "Data modeling: star & snowflake",
+          "Documentation: catalogs & dictionaries",
+          "Quality dimensions: accuracy, completeness, timeliness",
+          "Privacy & data ethics basics",
+          "Operational analytics vs BI vs ML"
+        ]
+      },
+      {
+        "name": "Excel / Google Sheets",
+        "lesson_count": 10,
+        "lessons": [
+          "Data import, validation, constraints",
+          "Pivot tables & VLOOKUP/XLOOKUP",
+          "Conditional formatting & data bars",
+          "SUMIFS, COUNTIFS, INDEX-MATCH",
+          "Line, bar, area and scatter charts",
+          "Basic dashboards & slicers",
+          "Data cleaning with text functions & Power Query",
+          "What-if analysis & Goal Seek",
+          "Automation basics with macros",
+          "Collaboration & sharing"
+        ]
+      },
+      {
+        "name": "Exploratory Data Analysis",
+        "lesson_count": 9,
+        "lessons": [
+          "Descriptive statistics & distributions",
+          "Histograms, box plots, scatter plots",
+          "Outlier detection & treatment",
+          "Correlation & covariance",
+          "Trend analysis & seasonality",
+          "Data quality checks",
+          "Feature engineering basics",
+          "Reporting & storytelling",
+          "Dashboard fundamentals"
+        ]
+      },
+      {
+        "name": "Statistics & Probability",
+        "lesson_count": 9,
+        "lessons": [
+          "Data summarization & sampling",
+          "Probability distributions",
+          "Inferential statistics & estimation",
+          "Hypothesis testing & p-values",
+          "Confidence intervals",
+          "Correlation vs causation",
+          "ANOVA & t-tests",
+          "Bayesian thinking",
+          "Experimental design basics"
+        ]
+      },
+      {
+        "name": "SQL / Data Wrangling",
+        "lesson_count": 10,
+        "lessons": [
+          "SELECT & WHERE",
+          "JOIN types & set operations",
+          "Aggregations & GROUP BY",
+          "Window functions & ranking",
+          "Subqueries & CTEs",
+          "Indexes & query optimization",
+          "Data types & constraints",
+          "Transactions & ACID properties",
+          "Views & materialized views",
+          "Security & permissions"
+        ]
+      },
+      {
+        "name": "Data Visualization",
+        "lesson_count": 9,
+        "lessons": [
+          "Tableau: connecting & aggregating",
+          "Tableau: visual analytics & KPIs",
+          "Tableau: dashboards & stories",
+          "Power BI: data models & DAX",
+          "Power BI: interactive dashboards",
+          "Chart types & best practices",
+          "Color theory & design principles",
+          "BI vs visualization tools",
+          "Reporting & sharing"
+        ]
+      },
+      {
+        "name": "Python",
+        "lesson_count": 10,
+        "lessons": [
+          "Python basics: types, loops & functions",
+          "NumPy & array operations",
+          "Pandas for data manipulation",
+          "Matplotlib & Seaborn",
+          "Exploratory data analysis in Python",
+          "Statistical modeling & scikit-learn",
+          "Data storytelling & communication",
+          "Packaging & reproducibility",
+          "Deployment basics",
+          "Python project case study"
+        ]
+      },
+      {
+        "name": "Placement Preparation",
+        "lesson_count": 10,
+        "lessons": [
+          "Building a data portfolio",
+          "Interview preparation & mock sessions",
+          "Resume & LinkedIn optimization",
+          "Technical vs HR interviews",
+          "Negotiating offers & salaries",
+          "Career paths in analytics",
+          "Networking & professional etiquette",
+          "Freelancing & side projects",
+          "Building a personal brand",
+          "Continuous learning & upskilling"
+        ]
+      },
+      {
+        "name": "Advanced Topics",
+        "lesson_count": 10,
+        "lessons": [
+          "Feature engineering & selection",
+          "Time series forecasting",
+          "Classification & clustering",
+          "Recommender systems",
+          "Natural language processing",
+          "Deep learning fundamentals",
+          "Model evaluation & tuning",
+          "Production ML & MLOps",
+          "Ethical AI & bias mitigation",
+          "Capstone project overview"
+        ]
+      }
+    ]
+  },
+
+  "tools": {
+    "advertised_total": "50+",
+    "categories": {
+      "data_analytics_bi": ["Excel", "Google Sheets", "Power BI", "Tableau", "Google Analytics", "Looker", "Metabase", "Mode", "Apache Superset"],
+      "generative_ai": ["ChatGPT", "Claude", "Gemini", "Cohere", "LangChain", "LlamaIndex", "Pinecone", "Hugging Face"],
+      "data_science_programming": ["SQL", "Python", "R", "Jupyter", "NumPy", "pandas", "scikit-learn", "TensorFlow", "PyTorch"]
+    }
+  },
+
+  "live_projects": [
+    {
+      "title": "Flipkart — SKU Demand Forecasting for Festive Sale",
+      "area": "Forecasting",
+      "difficulty": "Intermediate",
+      "duration": "8–10 hours",
+      "data_size": "1.2M rows",
+      "goal": "Build a weekly demand model for top 500 SKUs.",
+      "features": ["Price", "discount", "seasonality"],
+      "additional_work": "Quantify stockouts.",
+      "deliverable": "Power BI supply planner",
+      "project_guide": { "name": "Karan Gupta", "role": "Risk Analyst" }
+    },
+    {
+      "title": "PhonePe — Cohort Retention & LTV Segmentation",
+      "area": "Growth",
+      "difficulty": "Intermediate",
+      "duration": "6 hours",
+      "data_size": "5M sample events",
+      "goal": "Create weekly cohorts, compute retention/LTV and segment by geography/device.",
+      "additional_work": "Next-best-action campaigns and impact estimation.",
+      "project_guide": { "name": "Meera Nair", "role": "Growth Analyst" }
+    },
+    {
+      "title": "Zomato — Menu A/B Test",
+      "area": "Experimentation",
+      "difficulty": "Intermediate",
+      "duration": "5–6 hours",
+      "data_size": "200K sessions",
+      "goal": "Design an A/B test for a menu layout.",
+      "tasks": ["Sample size", "effect size", "rollout recommendation", "guardrails"],
+      "project_guide": { "name": "Aisha Khan", "role": "Data Scientist" }
+    },
+    {
+      "title": "Meesho — Seller Performance Dashboard",
+      "area": "BI",
+      "difficulty": "Beginner-Plus",
+      "duration": "4–5 hours",
+      "data_size": "120K rows",
+      "tool": "Power BI",
+      "goal": "Model orders, returns and reviews; build a scorecard with drill-through and DAX measures.",
+      "deliverable": "PDF storytelling report",
+      "project_guide": { "name": "Devanshi Patel", "role": "BI Specialist" }
+    }
+  ],
+
+  "hiring_companies": {
+    "data_analytics_page_list": ["Google", "Amazon", "Microsoft", "Meta", "Flipkart", "Swiggy", "Paytm", "Zomato", "Adobe", "Accenture", "Deloitte", "Uber"],
+    "homepage_count_claim": "500+",
+    "recruiter_page_count_claim": "150+",
+    "discrepancy_warning": "The 500+ and 150+ figures appear on different pages and should not be silently merged."
+  },
+
+  "recruiter_page": {
+    "source_page": "https://workskills.in/hire-with-us.html",
+    "talent_positioning": ["Pre-trained", "Day-1-ready", "Mentor-reviewed", "Portfolio-ready", "Project-led"],
+    "recruiter_claims": {
+      "zero_hiring_fee": true,
+      "shortlist_turnaround": "48 hours",
+      "time_to_hire": "3–5 days",
+      "join_rate_pct": 100,
+      "offer_drop_outs_pct": 0,
+      "companies_hired_count": "150+"
+    },
+    "hiring_process": [
+      "Request callback and share job description",
+      "Get a shortlist in 48 hours",
+      "Interview and work sample",
+      "Offer and onboard in 3–5 days"
+    ],
+    "additional_support": "Workskills can help coordinate interviews and joining, and can assist with quick re-matching if needed.",
+    "talent_features": {
+      "pre_trained_talent": "Weekly mentor reviews used to address skill gaps",
+      "case_study_walkthroughs": ["Salesforce case study", "Airbnb Tableau case study", "Netflix Data Analytics case study"],
+      "project_led_learning_examples": ["IMDb Movie Analysis", "Lead Scoring", "Credit Card Fraud Analysis"],
+      "mentorship": "1:1 personalized support",
+      "portfolio_ready_work": "Projects positioned as recruiter-facing proof of ability"
+    },
+    "placement_claims": {
+      "companies_hired_count": "150+",
+      "average_package_lakh_inr": 12.8,
+      "students_placed_pct": 90
+    }
+  },
+
+  "reviews": {
+    "source_page": "Data Analytics page",
+    "displayed_rating": 4.7,
+    "displayed_global_ratings": 3248,
+    "rating_distribution_pct": { "5_star": 76, "4_star": 14, "3_star": 6, "2_star": 2, "1_star": 2 },
+    "examples": [
+      { "name": "Ritika S.", "verified": true, "summary": "Mock interviews and weekly accountability helped with a first job interview." },
+      { "name": "Arjun K.", "verified": true, "summary": "Praises teaching and content quality; mentions live sessions and recordings." },
+      { "name": "Mahesh M.", "verified": true, "summary": "Says live projects helped with an interview." },
+      { "name": "Neha P.", "verified": true, "summary": "Says content is strong; requested weekend-only batches; recordings shared quickly." },
+      { "name": "Sagar G.", "verified": true, "summary": "States ₹60K was paid; describes the program as placement-focused and valuable." },
+      { "name": "Vikram K.", "verified": true, "summary": "Says he received a TCS offer of 4.5 LPA." }
+    ],
+    "ai_handling_rule": "Reviews are user-generated website content. Do not present an individual review as independently verified evidence of a placement outcome."
+  },
+
+  "contact_information": {
+    "homepage": {
+      "phone": "+91 8949655441",
+      "email": "support@workskills.in",
+      "address": "D-54, Siddhi Vinayak, C-Scheme, Jaipur, 302001"
+    },
+    "about_campus_hire_pages": {
+      "phone": "+91 88 2983 3957",
+      "email": "support@workskills.live",
+      "address": "Patel Marg, Mansarovar, Jaipur"
+    },
+    "discrepancy_warning": "Different public pages currently display different contact details. An AI assistant should ask the user to verify the current official contact page when exact contact information matters."
+  },
+
+  "privacy_policy": {
+    "last_updated": "June 2025",
+    "data_collected": {
+      "identity_contact": ["Name", "Email", "Mobile number", "City/state"],
+      "payment": {
+        "fields": ["Transaction IDs", "Payment status"],
+        "note": "Card numbers are not stored; payments processed by Razorpay"
+      },
+      "academic_professional": ["Educational background", "Work experience", "Program preferences"],
+      "technical": ["IP address", "Browser type", "Device identifiers", "Pages visited", "Cookies/analytics data"]
+    },
+    "purposes": [
+      "Process enrolment",
+      "Deliver program content",
+      "Communicate updates and schedules",
+      "Provide support",
+      "Process payments",
+      "Issue certificates",
+      "Improve website/programs/user experience",
+      "Meet legal obligations"
+    ],
+    "sharing": {
+      "sold_to_third_parties": false,
+      "may_share_with": ["IIT partners", "Razorpay/payment processors", "Cloud hosting/email/analytics providers", "Legal authorities when required"]
+    },
+    "retention": "Certificate records retained for at least 5 years.",
+    "user_rights": "Users can request access, correction or deletion of personal data by contacting support@workskills.in.",
+    "cookies": "Used for browsing experience and analytics.",
+    "security": "Industry-standard technical and organizational measures are used to protect information."
+  },
+
+  "public_pages": [
+    { "name": "Home", "url": "https://workskills.in/index.html" },
+    { "name": "About Us", "url": "https://workskills.in/about-us.html" },
+    { "name": "Campus Life", "url": "https://workskills.in/campus-life.html" },
+    { "name": "Hire With Us", "url": "https://workskills.in/hire-with-us.html" },
+    { "name": "Privacy Policy", "url": "https://workskills.in/privacy-policy.html" },
+    { "name": "Program / Data Analytics", "url": "https://program.workskills.in/" },
+    { "name": "Terms & Conditions", "url": null, "note": "linked from Privacy Policy" },
+    { "name": "Refund & Cancellation Policy", "url": null, "note": "linked from Privacy Policy" },
+    { "name": "Shipping & Delivery Policy", "url": null, "note": "linked from Privacy Policy" },
+    { "name": "Contact Us", "url": null, "note": "linked from Privacy Policy" }
+  ],
+
+  "data_conflicts": [
+    {
+      "field": "average_package",
+      "values": [
+        { "source": "Homepage", "value": "₹12.4 lakh per annum" },
+        { "source": "Hire With Us", "value": "₹12.8 lakh per annum" }
+      ]
+    },
+    {
+      "field": "hiring_company_count",
+      "values": [
+        { "source": "Homepage", "value": "500+ companies" },
+        { "source": "Hire With Us", "value": "150+ companies" }
+      ]
+    },
+    {
+      "field": "student_placement_count",
+      "values": [
+        { "source": "Homepage (section 1)", "value": "2,000+ students placed" },
+        { "source": "Homepage (section 2)", "value": "4,500+ placements/students" }
+      ]
+    },
+    {
+      "field": "data_analytics_pricing",
+      "values": [
+        { "source": "Main homepage (IIT Patna Data Analytics Certification)", "value": "₹38,000" },
+        { "source": "Dedicated Data Analytics page", "value": "₹33,322 + GST standard fee; ₹2,999 + GST enrolment" }
+      ]
+    },
+    {
+      "field": "contact_details",
+      "values": [
+        { "source": "Homepage", "value": "+91 8949655441 / support@workskills.in / D-54, Siddhi Vinayak, C-Scheme, Jaipur, 302001" },
+        { "source": "About/Campus/Hire pages", "value": "+91 88 2983 3957 / support@workskills.live / Patel Marg, Mansarovar, Jaipur" }
+      ]
+    },
+    {
+      "field": "refund_assurance_wording",
+      "values": [
+        { "source": "About page", "value": "Placement-milestone model involving internships/interviews with hiring partners and a refund claim (wording differs)" },
+        { "source": "Data Analytics program page", "value": "Pay ₹0 if Unplaced; full refund if offer below ₹5.0 LPA" }
+      ],
+      "note": "Always use the current program-specific terms when answering a refund question."
+    }
+  ],
+
+  "ai_assistant_answering_rules": [
+    "Answer only from available Workskills public information.",
+    "Never invent a program, fee, batch, placement, salary, certification or policy.",
+    "When two pages disagree, explicitly say that the website currently shows different values.",
+    "Treat prices as current-page values, not permanent prices.",
+    "Treat placement, salary and hiring numbers as Workskills website claims unless independently verified.",
+    "Never say a company guarantees hiring merely because its logo appears on the website.",
+    "Never expose private student/customer data.",
+    "Never infer personal eligibility without evidence.",
+    "Do not reveal payment information belonging to users.",
+    "For current admission availability, direct users to the official program page.",
+    "For refund questions, use the applicable program's current refund/cancellation terms.",
+    "For exact contact details, use the current official contact information and mention discrepancies if encountered.",
+    "Reviews should be treated as user-generated testimonials, not independent proof.",
+    "Do not claim that all programs have identical fees or curriculum.",
+    "Keep page-specific claims associated with their source page."
+  ],
+
+  "crawl_status": {
+    "document_type": "public_data_knowledge_base",
+    "not_included": [
+      "dynamically loaded content",
+      "pages not indexed by search engines",
+      "private/login-only content",
+      "forms and backend records",
+      "temporary campaign pages",
+      "images whose text is not exposed to search",
+      "pages linked only through JavaScript",
+      "future/new pages"
+    ],
+    "refresh_recommendation": "For a production AI chatbot, this dataset should be refreshed periodically because Workskills' prices, batches, claims and program details can change."
+  }
+}
